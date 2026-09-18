@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventura Stylecode · Styliste et Fashion Therapist à Toulouse · Colorimétrie, morphologie, style</title>
+<meta name="description" content="Test de colorimétrie, analyse de morphologie et conseil en image à Toulouse. Découvrez votre saison, vos sous-tons et les couleurs qui vous donnent bonne mine. Draping professionnel en lumière naturelle, nuancier et book remis en séance. Présentiel près de Toulouse ou visio. Interventions Fashion Therapy en entreprise.">
+<meta name="keywords" content="test de colorimétrie Toulouse, analyse colorimétrique, conseil en image Toulouse, coach en image, conseillère en image, draping, sous-tons, saison colorimétrique, couleurs chaudes froides, palette de couleurs personnalisée, analyse de morphologie, visagisme, tri de dressing, personal shopper Toulouse, relooking Haute-Garonne, colorimétrie en ligne, fashion therapy entreprise, atelier colorimétrie entreprise, séminaire QVT Occitanie">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#EDE7DC;--paper:#F6F2EA;--ink:#1A1310;--soft:#6E635A;--accent:#6B222A}
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:'Jost',system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:var(--accent)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--accent);color:var(--bone)}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+[data-plus]{transition:transform .6s cubic-bezier(.16,1,.3,1)}
+summary h3{transition:color .4s ease,transform .6s cubic-bezier(.16,1,.3,1)}
+summary:hover h3{color:var(--accent);transform:translateX(9px)}
+details[open] summary h3{color:var(--accent)}
+[data-lift]{transition:transform .8s cubic-bezier(.16,1,.3,1)}
+@keyframes vGlow{0%,100%{opacity:.09}50%{opacity:.16}}
+details[open] [data-plus]{transform:rotate(135deg)}
+details[open] [data-body]{animation:vOpen .85s cubic-bezier(.16,1,.3,1) both}
+@keyframes vOpen{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+@keyframes vRise{from{opacity:0;transform:translateY(46px)}to{opacity:1;transform:none}}
+@keyframes vFade{from{opacity:0}to{opacity:1}}
+@keyframes vMask{from{clip-path:inset(0 0 101% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes vWide{from{clip-path:inset(0 50% 0 50%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes vLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes vChar{from{opacity:0;transform:translateY(.7em) rotate(3deg)}to{opacity:1;transform:none}}
+@keyframes vLetterIn{from{transform:translateY(104%)}to{transform:translateY(0)}}
+@keyframes vLetterKern{from{letter-spacing:.09em}to{letter-spacing:-.018em}}
+@keyframes vRuleIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes vRoll{0%,22%{transform:translateY(0)}33%,55%{transform:translateY(-100%)}66%,88%{transform:translateY(-200%)}100%{transform:translateY(-300%)}}
+@keyframes vMarqueeBack{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes vTick{0%,100%{opacity:.25}50%{opacity:1}}
+[data-htrack]{will-change:transform}
+[data-htrack]>*{transform-origin:center center;will-change:transform,opacity}
+@keyframes vFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+@keyframes vKen{0%{transform:scale(1.02)}100%{transform:scale(1.14)}}
+@keyframes vMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes vVoile{from{transform:translateY(0)}to{transform:translateY(-101%)}}
+@keyframes vSigil{from{opacity:0;letter-spacing:.8em}to{opacity:1;letter-spacing:.3em}}
+@keyframes vDot{0%{transform:translateY(-100%);opacity:0}40%{opacity:1}100%{transform:translateY(100%);opacity:0}}
+@keyframes vDrape{0%,100%{transform:scaleX(.3)}45%,55%{transform:scaleX(1)}}
+[data-drape]{transform-origin:left;animation:vDrape 7s ease-in-out infinite}
+[data-drape]:nth-child(2){animation-delay:.16s}
+[data-drape]:nth-child(3){animation-delay:.32s}
+[data-drape]:nth-child(4){animation-delay:.48s}
+[data-drape]:nth-child(5){animation-delay:.64s}
+[data-drape]:nth-child(6){animation-delay:.8s}
+[data-drape]:nth-child(7){animation-delay:.96s}
+[data-drape]:nth-child(8){animation-delay:1.12s}
+[data-drape]:nth-child(9){animation-delay:1.28s}
+[data-drape]:nth-child(10){animation-delay:1.44s}
+html[data-armed] [data-reveal]{opacity:0;transition:opacity .95s cubic-bezier(.16,1,.3,1),transform 1.15s cubic-bezier(.16,1,.3,1),clip-path 1.5s cubic-bezier(.16,1,.3,1)}
+html[data-armed] [data-reveal][data-in]{opacity:1;transform:none;clip-path:inset(0 0 0 0)}
+html[data-armed] [data-reveal="up"]{transform:translateY(38px)}
+html[data-armed] [data-reveal="mask"]{opacity:1;clip-path:inset(0 0 101% 0)}
+html[data-armed] [data-reveal="wide"]{opacity:1;clip-path:inset(0 50% 0 50%)}
+html[data-armed] [data-reveal="line"]{opacity:1;transform:scaleX(0);transform-origin:left}
+html[data-armed] [data-reveal="line"][data-in]{transform:scaleX(1)}
+@media (prefers-reduced-motion:reduce){html[data-armed] [data-reveal]{opacity:1!important;clip-path:none!important;transform:none!important;transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["ProfessionalService","LocalBusiness"],"@id":"https://venturastylecode.fr/#business","name":"Ventura Stylecode","description":"Conseil en image à Toulouse : test de colorimétrie par draping, analyse de morphologie et de visagisme, décodage de style, moodboard et tri de dressing. Particuliers et interventions Fashion Therapy en entreprise.","areaServed":[{"@type":"City","name":"Toulouse"},{"@type":"AdministrativeArea","name":"Haute-Garonne"},{"@type":"AdministrativeArea","name":"Occitanie"}],"address":{"@type":"PostalAddress","addressLocality":"Lasserre-Pradère","postalCode":"31530","addressRegion":"Occitanie","addressCountry":"FR"},"email":"contact@venturastylecode.fr","knowsAbout":["colorimétrie","draping","sous-tons","saisons colorimétriques","morphologie","visagisme","personal styling"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Prestations de conseil en image","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Test de colorimétrie","description":"Analyse colorimétrique par draping en lumière naturelle : sous-tons, intensité, contraste, palette personnelle et Book Couleurs."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Analyse de morphologie et visagisme","description":"Proportions, volumes et lignes du visage : coupes, longueurs, encolures, bijoux et lunettes adaptés."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Stylecode","description":"Décodage de style personnel : codes, pièces signature et détails reconnaissables."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Moodboard Stylecode","description":"Univers visuel personnalisé et sélection de pièces avec liens d'achat."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tri et édition de dressing","description":"Tri de garde-robe, nouvelles associations et shopping list personnalisée."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Fashion Therapy en entreprise","description":"Conférences, ateliers collectifs de colorimétrie, team booster et animation d'événements."}}]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quelle différence entre un conseil en image et un relooking ?","acceptedAnswer":{"@type":"Answer","text":"Un relooking transforme une apparence le temps d'une journée, selon le goût de celui qui l'exécute. Le conseil en image vous donne des critères durables : votre palette, vos lignes, vos codes, que vous appliquez ensuite seul. Chaque séance se termine par la remise d'un book."}},{"@type":"Question","name":"Un test de colorimétrie est-il possible en ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui. La colorimétrie, la morphologie et le Stylecode existent en visioconférence. Le moodboard et le tri de dressing se font uniquement en ligne. Le draping en présentiel reste plus précis sur les nuances limites, car aucun écran ne restitue fidèlement une couleur."}},{"@type":"Question","name":"Comment se préparer à une séance de colorimétrie ?","acceptedAnswer":{"@type":"Answer","text":"Venez démaquillé, cheveux attachés ou dégagés du visage, dans une tenue neutre et près du corps. Pour le tri de dressing, préparez votre garde-robe accessible."}},{"@type":"Question","name":"Par quelle prestation commencer ?","acceptedAnswer":{"@type":"Answer","text":"Par le test de colorimétrie dans la majorité des cas : c'est l'analyse dont l'effet est le plus immédiat. Le Pack Découverte réunit la couleur et la ligne, le Pack Stylecode couvre l'ensemble du parcours jusqu'au dressing."}},{"@type":"Question","name":"Travaillez-vous avec les saisons colorimétriques ?","acceptedAnswer":{"@type":"Answer","text":"Oui, comme point de départ et non comme étiquette. Les quatre saisons donnent une première orientation, les douze saisons affinent selon la dominante et le contraste tonal. Ce qui compte réellement est votre palette personnelle."}},{"@type":"Question","name":"Combien coûte une séance de conseil en image ?","acceptedAnswer":{"@type":"Answer","text":"Les tarifs sont communiqués sous 24 heures après votre demande, avec le détail de ce qui est inclus, car ils dépendent du format et du nombre d'analyses. Les formules se règlent en deux fois sans frais."}},{"@type":"Question","name":"Où se déroulent les séances en présentiel près de Toulouse ?","acceptedAnswer":{"@type":"Answer","text":"Au cabinet de Lasserre-Pradère, à vingt minutes de Toulouse, choisi pour sa lumière naturelle. Les interventions en entreprise se déroulent sur site, partout en Occitanie."}}]}]}</script>
+<style>
+#cbar{position:fixed;left:0;right:0;top:0;z-index:300;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:9px clamp(14px,4vw,40px);background:var(--ink);color:var(--bone)}
+#cbar .cbl{font:400 9px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:rgba(237,231,220,.6)}
+#cbar .sw{width:18px;height:18px;border-radius:50%;border:1px solid rgba(237,231,220,.35);padding:0;transition:transform .35s ease,border-color .35s ease}
+#cbar .sw.sq{border-radius:0}
+#cbar .sw:hover{transform:scale(1.18)}
+#cbar .sw[aria-pressed="true"]{border-color:var(--bone);transform:scale(1.18)}
+#cbar .cbsep{width:1px;height:14px;background:rgba(237,231,220,.24);margin:0 4px}
+#cbar input[type=color]{width:26px;height:18px;padding:0;border:1px solid rgba(237,231,220,.35);background:none;cursor:pointer}
+body{padding-top:40px}
+header{top:40px!important}
+[data-hpin]{top:40px!important;height:calc(100vh - 40px)!important}
+@media print{#cbar{display:none}body{padding-top:0}}
+.hv0:hover{border-bottom-color:var(--accent) !important;color:var(--accent) !important}
+.hv1:hover{background:var(--ink) !important;color:var(--paper) !important}
+.hv2:hover{background:var(--ink) !important;color:var(--paper) !important;transform:translateY(-3px) !important}
+.hv3:hover{border-color:var(--ink) !important;transform:translateY(-3px) !important}
+.hv4:hover{background:var(--accent) !important;color:var(--paper) !important}
+.hv5:hover{background:var(--accent) !important;color:var(--paper) !important;transform:translateY(-10px) !important}
+.hv6:hover{background:var(--ink) !important;color:var(--paper) !important;transform:translateY(-10px) !important}
+.hv7:hover{background:var(--accent) !important;color:var(--paper) !important;transform:translateY(-8px) !important}
+.hv8:hover{border-color:var(--bone) !important;color:var(--bone) !important}
+.hv9:hover{color:var(--paper) !important}
+</style>
+</head>
+<body>
+<div id="cbar">
+<span class="cbl">Accent</span>
+<button class="sw" data-accent="#6B222A" title="Oxblood"></button>
+<button class="sw" data-accent="#1A1310" title="Encre"></button>
+<button class="sw" data-accent="#7A96A8" title="Bleu pâle"></button>
+<button class="sw" data-accent="#C9A39C" title="Rose pâle"></button>
+<button class="sw" data-accent="#3F5D4A" title="Vert profond"></button>
+<span class="cbsep"></span>
+<span class="cbl">Fond</span>
+<button class="sw sq" data-ground="bone" title="Bone"></button>
+<button class="sw sq" data-ground="rose" title="Rose pâle"></button>
+<button class="sw sq" data-ground="ivory" title="Ivoire"></button>
+<span class="cbsep"></span>
+<label class="cbl" style="display:flex;align-items:center;gap:8px;cursor:pointer">Perso <input type="color" id="cpick" value="#6B222A"></label>
+</div>
+<div style="position:fixed;top:0;left:0;right:0;height:2px;z-index:140;pointer-events:none;background:rgba(26,19,16,.07)">
+<div id="prog" style="height:100%;width:0%;background:var(--accent)"></div>
+</div>
+
+<div id="intro">
+<div style="position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;align-items:center;justify-content:center;animation:vVoile 1.1s cubic-bezier(.76,0,.24,1) 1.3s both">
+<span style="font:400 clamp(13px,2vw,20px)/1 'Bodoni Moda',serif;letter-spacing:.3em;text-transform:uppercase;color:var(--bone);animation:vSigil 1.3s cubic-bezier(.16,1,.3,1) both">Ventura</span>
+</div>
+</div>
+
+<header style="position:sticky;top:0;z-index:100;background:rgba(237,231,220,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(26,19,16,.1)">
+<div style="max-width:1560px;margin:0 auto;padding:0 clamp(18px,4vw,56px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px">
+<button data-go="accueil" style="text-align:left;flex:none">
+<span style="display:block;font:600 19px/1 'Bodoni Moda',serif;letter-spacing:.01em">Ventura</span>
+<span style="display:block;margin-top:2px;font:400 8px/1 'Jost',sans-serif;letter-spacing:.38em;text-transform:uppercase;color:var(--soft)">Stylecode</span>
+</button>
+<nav style="display:flex;align-items:center;gap:clamp(12px,2.2vw,32px);flex-wrap:wrap;justify-content:flex-end">
+<button data-go="accueil" style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid transparent" class="hv0">Accueil</button>
+<button data-go="b2c" style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid transparent" class="hv0">Particuliers</button>
+<button data-go="b2b" style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid transparent" class="hv0">Entreprises</button>
+<button data-go="contact" style="flex:none;background:var(--accent);color:var(--paper);padding:14px 24px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;transition:background .45s ease" class="hv1">Réserver</button>
+</nav>
+</div>
+</header>
+
+<div class="pg" data-pg="accueil">
+<main data-screen-label="Accueil">
+
+<section style="position:relative;background:var(--bone);overflow:hidden;min-height:clamp(560px,88vh,1000px);display:flex;flex-direction:column;justify-content:flex-end">
+<div style="position:absolute;inset:0;overflow:hidden">
+<img id="hero" src="images/miroir-blanc.jpg" alt="Kristian Ventura, styliste et fashion therapist à Toulouse" style="width:100%;height:100%;object-fit:cover;object-position:62% 14%;filter:grayscale(1) contrast(1.05) brightness(1.03);animation:vKen 26s ease-in-out infinite alternate;will-change:transform">
+</div>
+<div style="position:absolute;inset:0;background:linear-gradient(to top,var(--bone) 22%,rgba(237,231,220,.92) 38%,rgba(237,231,220,.62) 56%,rgba(237,231,220,.2) 82%,rgba(237,231,220,.4) 100%)"></div>
+<div style="position:absolute;top:clamp(20px,4vw,60px);right:clamp(18px,4vw,60px);max-width:31ch;text-align:right;background:var(--bone);padding:clamp(16px,1.8vw,26px) clamp(18px,2vw,30px)">
+<p style="margin:0;font:300 clamp(13px,.95vw,14.5px)/1.8 'Jost',sans-serif;color:var(--ink);text-wrap:pretty;animation:vFade 1.6s ease 2.3s both">Je ne transforme personne. Je rends lisible ce qui est déjà là : votre couleur, votre ligne, votre manière d'occuper une pièce.</p>
+</div>
+<div style="position:relative;padding:0 clamp(14px,3vw,44px) clamp(18px,3vw,44px)">
+<h1 style="margin:0;font:400 clamp(50px,16.4vw,286px)/.84 'Bodoni Moda',serif;letter-spacing:-.018em;color:var(--accent);mix-blend-mode:multiply;display:flex;justify-content:center;align-items:flex-end;animation:vLetterKern 2.6s cubic-bezier(.19,1,.22,1) 1.7s both">
+<span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 1.74s both">V</span></span><span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 1.83s both">e</span></span><span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 1.92s both">n</span></span><span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 2.01s both">t</span></span><span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 2.1s both">u</span></span><span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 2.19s both">r</span></span><span style="display:block;overflow:hidden;padding:.1em 0 .03em"><span style="display:block;animation:vLetterIn 1.45s cubic-bezier(.19,1,.22,1) 2.28s both">a</span></span>
+</h1>
+<div style="display:flex;align-items:center;justify-content:center;gap:clamp(12px,1.6vw,22px);margin-top:clamp(8px,1.2vw,18px)">
+<span style="display:block;flex:1;max-width:clamp(40px,12vw,220px);height:1px;background:rgba(26,19,16,.28);transform-origin:right;animation:vRuleIn 1.5s cubic-bezier(.19,1,.22,1) 2.5s both"></span>
+<span style="flex:none;font:400 clamp(8.5px,.78vw,11px)/1 'Jost',sans-serif;letter-spacing:.44em;text-transform:uppercase;color:var(--soft);animation:vFade 1.4s ease 2.7s both">Stylecode</span>
+<span style="display:block;flex:1;max-width:clamp(40px,12vw,220px);height:1px;background:rgba(26,19,16,.28);transform-origin:left;animation:vRuleIn 1.5s cubic-bezier(.19,1,.22,1) 2.5s both"></span>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-top:clamp(12px,2vw,26px);animation:vFade 1.5s ease 2.5s both">
+<span style="font:400 clamp(9px,.8vw,11px)/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)">Conseil en image &amp; colorimétrie · Toulouse</span>
+<span style="font:500 clamp(15px,1.5vw,22px)/1.3 'Bodoni Moda',serif;font-style:italic;color:var(--ink)">Votre style a ses codes. Révélez-les.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(18px,2.4vw,30px);animation:vFade 1.5s ease 2.65s both">
+<button data-go="b2c" style="background:var(--accent);color:var(--paper);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease,transform .6s cubic-bezier(.16,1,.3,1)" class="hv2">Réserver mon test de colorimétrie</button>
+<button data-go="b2b" style="border:1px solid rgba(26,19,16,.3);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:border-color .45s ease,transform .6s cubic-bezier(.16,1,.3,1)" class="hv3">Intervention en entreprise</button>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:clamp(14px,2.6vw,34px);margin-top:clamp(18px,2.4vw,28px);animation:vFade 1.5s ease 2.8s both">
+<span style="display:flex;align-items:center;gap:9px;font:400 10px/1.5 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)"><span style="width:12px;height:1px;background:var(--accent)"></span>Analyse en lumière naturelle</span>
+<span style="display:flex;align-items:center;gap:9px;font:400 10px/1.5 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)"><span style="width:12px;height:1px;background:var(--accent)"></span>Nuancier &amp; book remis en séance</span>
+<span style="display:flex;align-items:center;gap:9px;font:400 10px/1.5 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)"><span style="width:12px;height:1px;background:var(--accent)"></span>Présentiel ou visio</span>
+</div>
+</div>
+</section>
+
+<section style="background:var(--ink);color:var(--bone);overflow:hidden;padding:clamp(14px,1.6vw,22px) 0">
+<div style="display:flex;width:max-content;animation:vMarquee 38s linear infinite">
+<div style="display:flex;align-items:center;gap:clamp(24px,3vw,48px);padding-right:clamp(24px,3vw,48px);flex:none;white-space:nowrap;font:400 clamp(12px,1.2vw,17px)/1 'Bodoni Moda',serif;letter-spacing:.24em;text-transform:uppercase">
+<span>Colorimétrie</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span style="font-style:italic;text-transform:none;letter-spacing:.02em">Morphologie</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span>Visagisme</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span style="font-style:italic;text-transform:none;letter-spacing:.02em">Stylecode</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span>Moodboard</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span style="font-style:italic;text-transform:none;letter-spacing:.02em">Dressing</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span>Fashion Therapy</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span>
+</div>
+<div style="display:flex;align-items:center;gap:clamp(24px,3vw,48px);padding-right:clamp(24px,3vw,48px);flex:none;white-space:nowrap;font:400 clamp(12px,1.2vw,17px)/1 'Bodoni Moda',serif;letter-spacing:.24em;text-transform:uppercase">
+<span>Colorimétrie</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span style="font-style:italic;text-transform:none;letter-spacing:.02em">Morphologie</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span>Visagisme</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span style="font-style:italic;text-transform:none;letter-spacing:.02em">Stylecode</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span>Moodboard</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span style="font-style:italic;text-transform:none;letter-spacing:.02em">Dressing</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span><span>Fashion Therapy</span><span style="color:var(--accent);font-size:.62em;letter-spacing:0">/</span>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(70px,11vw,180px) clamp(20px,6vw,90px)">
+<div style="max-width:1100px;margin:0 auto;text-align:center">
+<span data-reveal="fade" style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)">Le principe</span>
+<p data-reveal="up" style="margin:clamp(26px,4vw,48px) 0 0;font:400 clamp(24px,4.4vw,62px)/1.16 'Bodoni Moda',serif;letter-spacing:-.02em;text-wrap:balance">Les vêtements ne changent pas votre corps. Ils changent <span style="font-style:italic;color:var(--accent)">la façon dont vous le regardez.</span></p>
+<p data-reveal="up" style="margin:clamp(24px,3.4vw,40px) auto 0;max-width:60ch;font:300 clamp(14px,1.02vw,15.5px)/1.88 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Beaucoup de gens se croient nuls en mode. En réalité personne ne leur a jamais donné les informations de base : quelles couleurs réveillent leur carnation, quelles coupes accompagnent leurs proportions, comment traduire leur personnalité en vêtements. Ce sont trois questions techniques, et elles ont des réponses précises. Mon travail de conseillère en image consiste à vous les donner.</p>
+<div data-reveal="up" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:clamp(16px,2.4vw,40px);max-width:920px;margin:clamp(34px,5vw,64px) auto 0;text-align:left">
+<div style="border-top:1px solid rgba(26,19,16,.2);padding-top:14px">
+<span style="display:block;font:400 clamp(20px,2.2vw,32px)/1.1 'Bodoni Moda',serif;color:var(--accent)">Fini</span>
+<span style="display:block;margin-top:8px;font:300 14px/1.7 'Jost',sans-serif;color:var(--soft)">les achats qui restent sur le cintre, étiquette encore dessus.</span>
+</div>
+<div style="border-top:1px solid rgba(26,19,16,.2);padding-top:14px">
+<span style="display:block;font:400 clamp(20px,2.2vw,32px)/1.1 'Bodoni Moda',serif;color:var(--accent)">Fini</span>
+<span style="display:block;margin-top:8px;font:300 14px/1.7 'Jost',sans-serif;color:var(--soft)">les vingt minutes devant l'armoire pour ressortir la même tenue.</span>
+</div>
+<div style="border-top:1px solid rgba(26,19,16,.2);padding-top:14px">
+<span style="display:block;font:400 clamp(20px,2.2vw,32px)/1.1 'Bodoni Moda',serif;color:var(--accent)">Fini</span>
+<span style="display:block;margin-top:8px;font:300 14px/1.7 'Jost',sans-serif;color:var(--soft)">la question «&nbsp;est-ce que cette couleur me va&nbsp;?&nbsp;» sans réponse.</span>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--paper);padding:clamp(60px,9vw,140px) 0 0">
+<div style="max-width:1560px;margin:0 auto;padding:0 clamp(20px,6vw,90px)">
+<span data-reveal="fade" style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)">La méthode, en trois lectures</span>
+<h2 data-reveal="up" style="margin:clamp(20px,3vw,36px) 0 0;font:400 clamp(30px,5.6vw,86px)/1.02 'Bodoni Moda',serif;letter-spacing:-.03em;max-width:18ch">La couleur, la ligne, <span style="font-style:italic;color:var(--accent)">le code</span></h2>
+</div>
+
+<article style="margin-top:clamp(44px,6vw,92px);border-top:1px solid rgba(26,19,16,.16)">
+<div style="max-width:1560px;margin:0 auto;padding:clamp(30px,4vw,58px) clamp(20px,6vw,90px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,4vw,64px);align-items:start">
+<div data-reveal="up" style="display:flex;align-items:baseline;gap:clamp(14px,2vw,28px)">
+<span style="font:400 clamp(52px,8vw,128px)/.8 'Bodoni Moda',serif;color:var(--accent);letter-spacing:-.04em">01</span>
+<h3 style="margin:0;font:400 clamp(22px,2.6vw,40px)/1.08 'Bodoni Moda',serif;letter-spacing:-.02em">La couleur</h3>
+</div>
+<div data-reveal="up">
+<p style="margin:0;max-width:52ch;font:300 clamp(14px,1.02vw,15.5px)/1.88 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Le draping consiste à poser des tissus de couleurs différentes sous votre visage et à observer ce qui se passe : le teint qui s'unifie ou se creuse, le regard qui s'éclaircit, les cernes qui se marquent. De ces observations je déduis vos sous-tons, votre intensité et votre contraste, puis votre saison colorimétrique et la palette qui en découle.</p>
+<p style="margin:18px 0 0;max-width:34ch;font:500 clamp(16px,1.6vw,24px)/1.45 'Bodoni Moda',serif;font-style:italic">Votre couleur idéale est celle dans laquelle vous vous reconnaissez.</p>
+</div>
+<div data-reveal="fade" style="display:flex;flex-direction:column;gap:2px;min-height:clamp(150px,20vw,260px)">
+<span data-drape="1" style="flex:1;background:#E8D8CF"></span>
+<span data-drape="1" style="flex:1;background:#D9A7A0"></span>
+<span data-drape="1" style="flex:1;background:#B9646E"></span>
+<span data-drape="1" style="flex:1;background:#8C3B4A"></span>
+<span data-drape="1" style="flex:1;background:#5C2233"></span>
+<span data-drape="1" style="flex:1;background:#2E2A33"></span>
+<span data-drape="1" style="flex:1;background:#3C5A6B"></span>
+<span data-drape="1" style="flex:1;background:#7192A6"></span>
+<span data-drape="1" style="flex:1;background:#A9C4D4"></span>
+<span data-drape="1" style="flex:1;background:#C9BFA8"></span>
+</div>
+</div>
+</article>
+
+<article style="border-top:1px solid rgba(26,19,16,.16)">
+<div style="max-width:1560px;margin:0 auto;padding:clamp(30px,4vw,58px) clamp(20px,6vw,90px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,4vw,64px);align-items:start">
+<div data-reveal="up" style="display:flex;align-items:baseline;gap:clamp(14px,2vw,28px)">
+<span style="font:400 clamp(52px,8vw,128px)/.8 'Bodoni Moda',serif;color:var(--accent);letter-spacing:-.04em">02</span>
+<h3 style="margin:0;font:400 clamp(22px,2.6vw,40px)/1.08 'Bodoni Moda',serif;letter-spacing:-.02em">La ligne</h3>
+</div>
+<div data-reveal="up">
+<p style="margin:0;max-width:52ch;font:300 clamp(14px,1.02vw,15.5px)/1.88 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">On mesure vos proportions réelles, la répartition de vos volumes, la géométrie de votre visage. De là découlent des réponses concrètes : quelles longueurs de veste, quelles encolures, quelle hauteur de taille, quelles montures de lunettes. Et surtout comment jouer avec ces règles pour changer d'intention selon le contexte.</p>
+<p style="margin:18px 0 0;max-width:34ch;font:500 clamp(16px,1.6vw,24px)/1.45 'Bodoni Moda',serif;font-style:italic">Il ne s'agit pas de corriger votre corps, mais de savoir le mettre en valeur.</p>
+</div>
+<div data-reveal="fade" style="display:flex;flex-direction:column;justify-content:center;gap:clamp(10px,1.4vw,18px);min-height:clamp(150px,20vw,260px)">
+<span style="display:block;height:1px;background:var(--ink);width:32%"></span>
+<span style="display:block;height:1px;background:var(--ink);width:58%"></span>
+<span style="display:block;height:1px;background:var(--accent);width:100%"></span>
+<span style="display:block;height:1px;background:var(--ink);width:74%"></span>
+<span style="display:block;height:1px;background:var(--ink);width:44%"></span>
+</div>
+</div>
+</article>
+
+<article style="border-block:1px solid rgba(26,19,16,.16)">
+<div style="max-width:1560px;margin:0 auto;padding:clamp(30px,4vw,58px) clamp(20px,6vw,90px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(20px,4vw,64px);align-items:start">
+<div data-reveal="up" style="display:flex;align-items:baseline;gap:clamp(14px,2vw,28px)">
+<span style="font:400 clamp(52px,8vw,128px)/.8 'Bodoni Moda',serif;color:var(--accent);letter-spacing:-.04em">03</span>
+<h3 style="margin:0;font:400 clamp(22px,2.6vw,40px)/1.08 'Bodoni Moda',serif;letter-spacing:-.02em">Le code</h3>
+</div>
+<div data-reveal="up">
+<p style="margin:0;max-width:52ch;font:300 clamp(14px,1.02vw,15.5px)/1.88 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">La partie la plus personnelle. On parle de votre vie réelle, de vos journées, de ce que vous voulez que les gens comprennent de vous avant que vous ayez parlé. On en tire un vocabulaire : des matières, des associations, des pièces signature, des détails récurrents qui rendent votre allure reconnaissable.</p>
+<p style="margin:18px 0 0;max-width:34ch;font:500 clamp(16px,1.6vw,24px)/1.45 'Bodoni Moda',serif;font-style:italic">L'objectif n'est pas de vous enfermer dans un style, mais de créer le vôtre.</p>
+</div>
+<div data-reveal="fade" style="display:flex;flex-direction:column;justify-content:center;gap:10px;min-height:clamp(150px,20vw,260px)">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">Vos pièces signature</span>
+<span style="display:block;height:1px;background:rgba(26,19,16,.2)"></span>
+<span style="font:400 clamp(15px,1.5vw,21px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--ink)">Trois vestes, deux nuances, un détail récurrent. Un style tient à peu de choses, à condition qu'elles soient les bonnes.</span>
+</div>
+</div>
+</article>
+</section>
+
+<section style="position:relative;background:var(--ink);overflow:hidden;padding:clamp(70px,11vw,170px) clamp(20px,6vw,90px)">
+<div aria-hidden="true" style="position:absolute;left:0;right:0;top:clamp(20px,4vw,60px);display:flex;justify-content:center;pointer-events:none">
+<span style="font:400 clamp(70px,19vw,330px)/.9 'Bodoni Moda',serif;font-style:italic;color:rgba(237,231,220,.07);letter-spacing:-.05em;white-space:nowrap">Fashion Therapy</span>
+</div>
+<div style="position:relative;z-index:2;max-width:1400px;margin:0 auto">
+<span data-reveal="fade" style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:rgba(237,231,220,.55)">Le parti pris</span>
+<p data-reveal="up" style="margin:clamp(22px,3.2vw,44px) 0 0;max-width:24ch;font:400 clamp(28px,5.4vw,84px)/1.04 'Bodoni Moda',serif;color:var(--paper);letter-spacing:-.032em">Le style n'est pas un déguisement. <span style="font-style:italic;color:var(--accent)">C'est une langue.</span></p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,3.4vw,58px);margin-top:clamp(34px,5vw,76px);padding-top:clamp(22px,3vw,38px);border-top:1px solid rgba(237,231,220,.2)">
+<p data-reveal="up" style="margin:0;font:300 clamp(13px,.95vw,14.5px)/1.9 'Jost',sans-serif;color:rgba(237,231,220,.78);text-wrap:pretty">On ne vient pas ici pour devenir quelqu'un d'autre. On vient pour arrêter de s'habiller contre soi. Je travaille sur ce que vous portez, et sur ce que vous en ressentez. C'est là que tout change.</p>
+<p data-reveal="up" style="margin:0;font:300 clamp(13px,.95vw,14.5px)/1.9 'Jost',sans-serif;color:rgba(237,231,220,.68);text-wrap:pretty">Le vêtement n'est qu'une porte d'entrée. Derrière, il y a le rapport au corps, le regard des autres, la légitimité qu'on s'accorde ou qu'on se refuse. C'est la part la moins visible du travail, et la plus déterminante.</p>
+<p data-reveal="up" style="margin:0;font:300 clamp(13px,.95vw,14.5px)/1.9 'Jost',sans-serif;color:rgba(237,231,220,.68);text-wrap:pretty">D'où le mot thérapie, employé sans emphase : on ne soigne rien, mais on répare souvent quelque chose. Beaucoup de séances se terminent sur autre chose que des vêtements.</p>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(70px,10vw,160px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+</div>
+</section>
+
+<section data-hsection="1" style="position:relative;background:var(--paper);height:clamp(1400px,330vh,2600px)">
+<div data-hpin="1" style="position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center">
+<div style="padding:0 clamp(20px,6vw,90px);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+<h2 style="margin:0;font:400 clamp(24px,3.4vw,52px)/1.04 'Bodoni Moda',serif;letter-spacing:-.028em;max-width:20ch">Ce n'est pas qu'une <span style="font-style:italic;color:var(--accent)">affaire de vêtements</span></h2>
+<span style="display:flex;align-items:center;gap:12px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--soft)">Faites défiler <span style="display:block;width:26px;height:1px;background:var(--accent);animation:vTick 2.2s ease-in-out infinite"></span></span>
+</div>
+<div data-htrack="1" style="display:flex;gap:clamp(16px,2.2vw,34px);padding:clamp(28px,4vw,60px) calc(50% - min(40vw,210px));align-items:center">
+<article style="flex:none;width:min(80vw,420px);border-top:1px solid var(--ink);padding-top:clamp(16px,2vw,24px);display:flex;flex-direction:column;gap:12px">
+<span style="font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">01</span>
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">Beauté</span>
+<h3 style="margin:0;font:400 clamp(19px,1.9vw,28px)/1.16 'Bodoni Moda',serif">Maquillage, coiffure, coloration</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Votre palette détermine votre fond de teint, vos rouges à lèvres, votre blush et le métal de vos bijoux. Elle indique aussi quelles colorations respectent votre carnation, et lesquelles éteindront votre teint quoi que fasse le coiffeur.</p>
+</article>
+<article style="flex:none;width:min(80vw,420px);border-top:1px solid var(--ink);padding-top:clamp(16px,2vw,24px);display:flex;flex-direction:column;gap:12px">
+<span style="font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">02</span>
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">Visage</span>
+<h3 style="margin:0;font:400 clamp(19px,1.9vw,28px)/1.16 'Bodoni Moda',serif">Lunettes, encolures, bijoux</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Le visagisme travaille la géométrie de votre visage : quelle monture équilibre vos traits, quelle encolure allonge ou tasse, quelle longueur de boucle d'oreille fonctionne. Des décisions qu'on prend une fois et qu'on garde des années.</p>
+</article>
+<article style="flex:none;width:min(80vw,420px);border-top:1px solid var(--ink);padding-top:clamp(16px,2vw,24px);display:flex;flex-direction:column;gap:12px">
+<span style="font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">03</span>
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">Posture</span>
+<h3 style="margin:0;font:400 clamp(19px,1.9vw,28px)/1.16 'Bodoni Moda',serif">Ce que vous dites sans parler</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Votre tenue a déjà transmis un message avant votre premier mot. On regarde ce que la vôtre raconte aujourd'hui, si c'est bien ce que vous voulez dire, et comment ajuster le registre : un entretien, une négociation, une prise de parole.</p>
+</article>
+<article style="flex:none;width:min(80vw,420px);border-top:1px solid var(--ink);padding-top:clamp(16px,2vw,24px);display:flex;flex-direction:column;gap:12px">
+<span style="font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">04</span>
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">Consommation</span>
+<h3 style="margin:0;font:400 clamp(19px,1.9vw,28px)/1.16 'Bodoni Moda',serif">Acheter moins, garder plus</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Savoir ce qui vous va supprime l'achat compulsif, le vêtement jamais porté et le retour en magasin. Vous achetez moins souvent, mieux, et vous gardez plus longtemps. C'est l'effet le plus durable de la démarche.</p>
+</article>
+<article style="flex:none;width:min(80vw,420px);border-top:1px solid var(--ink);padding-top:clamp(16px,2vw,24px);display:flex;flex-direction:column;gap:12px">
+<span style="font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">05</span>
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">Transmission</span>
+<h3 style="margin:0;font:400 clamp(19px,1.9vw,28px)/1.16 'Bodoni Moda',serif">Ce qui se passe à la maison</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Beaucoup de clientes reviennent avec leur fille, leur conjoint ou leur mère. Le vocabulaire se transmet, et la manière de parler du corps à table change. C'est l'effet auquel je m'attendais le moins.</p>
+</article>
+<div style="flex:none;width:min(72vw,340px);display:flex;flex-direction:column;justify-content:flex-end;gap:16px;background:var(--ink);color:var(--bone);padding:clamp(22px,2.8vw,38px)">
+<p style="margin:0;font:400 clamp(18px,1.9vw,27px)/1.3 'Bodoni Moda',serif;font-style:italic;color:var(--paper)">Une analyse faite une fois sert pendant des années.</p>
+<button data-go="b2c" style="align-self:flex-start;background:var(--paper);color:var(--ink);padding:16px 26px;font:400 10px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease" class="hv4">Voir les prestations</button>
+</div>
+</div>
+<div style="padding:0 clamp(20px,6vw,90px)">
+<div style="height:1px;background:rgba(26,19,16,.16);position:relative">
+<div data-hbar="1" style="position:absolute;left:0;top:0;height:1px;width:0%;background:var(--accent)"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(70px,10vw,160px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<h2 data-reveal="up" style="margin:0 0 clamp(34px,5vw,68px);font:400 clamp(28px,5vw,74px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em;max-width:16ch">Deux façons de <span style="font-style:italic;color:var(--accent)">travailler ensemble</span></h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(18px,2.6vw,40px)">
+<button data-go="b2c" data-reveal="up" style="text-align:left;display:flex;flex-direction:column;gap:clamp(18px,2.4vw,28px);padding:clamp(26px,3.4vw,48px);background:var(--paper);border:1px solid rgba(26,19,16,.14);transition:background .6s ease,transform .7s cubic-bezier(.16,1,.3,1)" class="hv5">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.3em;text-transform:uppercase;opacity:.6">Particuliers</span>
+<span style="font:400 clamp(26px,3.4vw,52px)/1.02 'Bodoni Moda',serif;letter-spacing:-.025em">Révéler<br><span style="font-style:italic">votre image</span></span>
+<span style="max-width:38ch;font:300 13.5px/1.822 'Jost',sans-serif;opacity:.82">Cinq analyses à la carte, deux formules complètes. Colorimétrie, morphologie, visagisme, style, moodboard, dressing. En cabinet près de Toulouse ou en visioconférence.</span>
+<span style="margin-top:auto;display:inline-flex;align-items:center;gap:12px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase">Voir les prestations <span>→</span></span>
+</button>
+<button data-go="b2b" data-reveal="up" style="text-align:left;display:flex;flex-direction:column;gap:clamp(18px,2.4vw,28px);padding:clamp(26px,3.4vw,48px);background:var(--paper);border:1px solid rgba(26,19,16,.14);transition:background .6s ease,transform .7s cubic-bezier(.16,1,.3,1)" class="hv6">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.3em;text-transform:uppercase;opacity:.6">Entreprises</span>
+<span style="font:400 clamp(26px,3.4vw,52px)/1.02 'Bodoni Moda',serif;letter-spacing:-.025em">Fashion<br><span style="font-style:italic">Therapy</span></span>
+<span style="max-width:38ch;font:300 13.5px/1.822 'Jost',sans-serif;opacity:.82">Conférences, ateliers collectifs, team booster, animation d'événements. Des formats construits sur mesure pour vos séminaires et vos journées qualité de vie au travail.</span>
+<span style="margin-top:auto;display:inline-flex;align-items:center;gap:12px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase">Voir les formats <span>→</span></span>
+</button>
+</div>
+</div>
+</section>
+
+<section style="background:var(--paper);padding:clamp(70px,10vw,160px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(34px,5vw,64px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(28px,5vw,74px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em">Le déroulé <span style="font-style:italic;color:var(--accent)">d'une séance</span></h2>
+<span style="max-width:32ch;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Toujours les mêmes quatre temps, quelle que soit la prestation choisie.</span>
+</div>
+<ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:clamp(18px,2.4vw,36px);align-items:start">
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">I</span>
+<h3 style="margin:16px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Écouter</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Vingt minutes sur votre rapport au vêtement, votre quotidien, ce que vous fuyez et ce que vous cherchez. Sans cette étape, le reste ne sert à rien.</p>
+</li>
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">II</span>
+<h3 style="margin:16px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif;padding-top:clamp(0px,2vw,26px)">Analyser</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Draping, mesures de proportions, lecture du visage. Des observations vérifiables, faites en lumière naturelle, pas des impressions.</p>
+</li>
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">III</span>
+<h3 style="margin:16px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Traduire</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">On convertit l'analyse en décisions utilisables demain matin : ces coupes, ces nuances, ces associations, devant votre penderie et en boutique.</p>
+</li>
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 clamp(30px,3.4vw,52px)/1 'Bodoni Moda',serif;color:var(--accent)">IV</span>
+<h3 style="margin:16px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Transmettre</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Votre book personnalisé repart avec vous. Le jour où vous n'avez plus besoin de moi, la séance a rempli son rôle.</p>
+</li>
+</ol>
+<div data-reveal="up" style="margin-top:clamp(36px,5vw,72px);border-top:1px solid rgba(26,19,16,.2);padding-top:clamp(24px,3.4vw,40px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:clamp(18px,3vw,40px)">
+<p style="margin:0;max-width:34ch;font:400 clamp(18px,2.2vw,32px)/1.3 'Bodoni Moda',serif;font-style:italic">Le plus simple reste d'en parler dix minutes.</p>
+<button data-go="contact" style="background:var(--accent);color:var(--paper);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease,transform .6s cubic-bezier(.16,1,.3,1)" class="hv2">Demander un premier échange</button>
+</div>
+</div>
+</section>
+
+<section style="background:var(--ink);color:var(--bone);padding:clamp(70px,10vw,160px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(34px,5vw,62px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(28px,5vw,74px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em;color:var(--paper);max-width:17ch">On vient me voir quand<br><span style="display:inline-block;overflow:hidden;height:1.06em;vertical-align:bottom"><span style="display:block;animation:vRoll 13s cubic-bezier(.76,0,.24,1) infinite"><span style="display:block;height:1.06em;font-style:italic;color:var(--accent)">le corps change</span><span style="display:block;height:1.06em;font-style:italic;color:var(--accent)">le poste change</span><span style="display:block;height:1.06em;font-style:italic;color:var(--accent)">la vie bascule</span><span style="display:block;height:1.06em;font-style:italic;color:var(--accent)">le corps change</span></span></span></h2>
+<p data-reveal="up" style="margin:0;max-width:38ch;font:300 clamp(13px,.95vw,14.5px)/1.82 'Jost',sans-serif;color:rgba(237,231,220,.7);text-wrap:pretty">Presque jamais par coquetterie. Presque toujours parce que quelque chose a bougé et que l'image ne suit plus.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(18px,2.6vw,38px)">
+<div data-reveal="up" style="border-top:1px solid rgba(237,231,220,.24);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif;color:var(--paper)">Le corps a changé</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:rgba(237,231,220,.7);text-wrap:pretty">Après une grossesse, une perte ou une prise de poids, une ménopause, une maladie. Les anciens repères ne fonctionnent plus et le dressing est devenu hostile. On repart des proportions réelles, telles qu'elles sont aujourd'hui.</p>
+</div>
+<div data-reveal="up" style="border-top:1px solid rgba(237,231,220,.24);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif;color:var(--paper)">La vie professionnelle bascule</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:rgba(237,231,220,.7);text-wrap:pretty">Une prise de poste, un passage au management, une reconversion, un retour à l'emploi, un lancement d'activité. Il faut une image qui porte la fonction sans donner l'impression de jouer un rôle.</p>
+</div>
+<div data-reveal="up" style="border-top:1px solid rgba(237,231,220,.24);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif;color:var(--paper)">Un cap personnel</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:rgba(237,231,220,.7);text-wrap:pretty">Une séparation, un anniversaire qui pèse, des années passées à s'habiller pour les autres ou pour disparaître. Le vêtement devient le terrain le plus tangible pour se réapproprier quelque chose.</p>
+</div>
+<div data-reveal="up" style="border-top:1px solid rgba(237,231,220,.24);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif;color:var(--paper)">Le ras-le-bol pratique</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:rgba(237,231,220,.7);text-wrap:pretty">Une armoire pleine, rien à se mettre, de l'argent dépensé dans des pièces jamais portées. Pas de crise existentielle ici, juste un besoin de méthode et de critères fiables.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--paper);border-block:1px solid rgba(26,19,16,.14);overflow:hidden;padding:clamp(12px,1.4vw,20px) 0">
+<div style="display:flex;width:max-content;animation:vMarqueeBack 44s linear infinite">
+<div style="display:flex;align-items:center;gap:clamp(20px,2.6vw,44px);padding-right:clamp(20px,2.6vw,44px);flex:none;white-space:nowrap;font:400 clamp(11px,1.05vw,15px)/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">
+<span>Printemps clair</span><span style="color:var(--accent)">/</span><span>Été froid</span><span style="color:var(--accent)">/</span><span>Automne profond</span><span style="color:var(--accent)">/</span><span>Hiver contrasté</span><span style="color:var(--accent)">/</span><span>Sous-tons chauds</span><span style="color:var(--accent)">/</span><span>Sous-tons froids</span><span style="color:var(--accent)">/</span><span>Carnation neutre</span><span style="color:var(--accent)">/</span>
+</div>
+<div style="display:flex;align-items:center;gap:clamp(20px,2.6vw,44px);padding-right:clamp(20px,2.6vw,44px);flex:none;white-space:nowrap;font:400 clamp(11px,1.05vw,15px)/1 'Jost',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)">
+<span>Printemps clair</span><span style="color:var(--accent)">/</span><span>Été froid</span><span style="color:var(--accent)">/</span><span>Automne profond</span><span style="color:var(--accent)">/</span><span>Hiver contrasté</span><span style="color:var(--accent)">/</span><span>Sous-tons chauds</span><span style="color:var(--accent)">/</span><span>Sous-tons froids</span><span style="color:var(--accent)">/</span><span>Carnation neutre</span><span style="color:var(--accent)">/</span>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(70px,10vw,160px) clamp(20px,6vw,90px)">
+<div style="max-width:1120px;margin:0 auto">
+<h2 data-reveal="up" style="margin:0 0 clamp(30px,4.4vw,58px);font:400 clamp(28px,5vw,74px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em">Ce qu'on me demande <span style="font-style:italic;color:var(--accent)">avant de réserver</span></h2>
+<details style="border-top:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Quelle différence entre un conseil en image et un relooking ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Un relooking transforme une apparence le temps d'une journée, selon le goût de celui qui l'exécute. Le conseil en image vous donne des critères durables, votre palette, vos lignes, vos codes, que vous appliquez ensuite seul. C'est la raison pour laquelle chaque séance se termine par la remise d'un book : vous partez avec la méthode, pas seulement avec un résultat.</p></div>
+</details>
+<details style="border-top:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Les séances sont-elles possibles à distance ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Oui. La colorimétrie, la morphologie et le Stylecode existent en visioconférence. Le moodboard et l'édition de dressing se font uniquement en ligne. Une précision honnête : le draping en présentiel reste plus précis sur les nuances limites, parce qu'aucun écran ne restitue fidèlement une couleur.</p></div>
+</details>
+<details style="border-top:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Comment dois-je me préparer ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Pour la colorimétrie et la morphologie : venez démaquillé, cheveux attachés ou dégagés du visage, dans une tenue neutre et près du corps. Pour l'édition de dressing, préparez votre garde-robe accessible, nous y travaillons directement en visioconférence ou à partir de photographies.</p></div>
+</details>
+<details style="border-top:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Par quelle prestation commencer ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Par la colorimétrie dans la grande majorité des cas : c'est l'analyse dont l'effet est le plus immédiat et le plus visible. Si vous voulez poser des bases solides d'un coup, le Pack Découverte réunit la couleur et la ligne. Le Pack Stylecode couvre l'ensemble du parcours jusqu'au dressing.</p></div>
+</details>
+<details style="border-top:1px solid rgba(26,19,16,.18);border-bottom:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Où se déroulent les séances en présentiel ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Au cabinet de Lasserre-Pradère, à vingt minutes de Toulouse, choisi pour sa lumière naturelle. Les interventions en entreprise se déroulent sur votre site, partout en Occitanie, avec tout le matériel de draping apporté sur place.</p></div>
+</details>
+<details style="border-top:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Travaillez-vous avec les saisons colorimétriques ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Oui, mais comme un point de départ et non comme une étiquette. Les quatre saisons donnent une première orientation, les douze saisons affinent selon votre dominante et votre contraste tonal. Ce qui compte réellement, c'est votre palette personnelle : deux personnes classées automne profond n'ont pas exactement les mêmes nuances gagnantes.</p></div>
+</details>
+<details style="border-top:1px solid rgba(26,19,16,.18)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(20px,2.8vw,32px) 0">
+<h3 style="margin:0;max-width:46ch;font:400 clamp(17px,1.7vw,24px)/1.32 'Bodoni Moda',serif">Combien coûte une séance, et sous quel délai ?</h3>
+<span data-plus="1" style="flex:none;display:block;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(24px,3vw,34px);max-width:70ch"><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Les tarifs vous sont communiqués sous 24 heures après votre demande, avec le détail de ce qui est inclus, parce qu'ils dépendent du format retenu et du nombre d'analyses. Les formules se règlent en deux fois sans frais. Les créneaux se réservent généralement deux à trois semaines à l'avance.</p></div>
+</details>
+</div>
+</section>
+
+</main>
+</div>
+
+<div class="pg" data-pg="b2c" hidden>
+<main data-screen-label="Particuliers">
+
+<section style="background:var(--paper);border-bottom:1px solid rgba(26,19,16,.18);padding:clamp(28px,4vw,56px) clamp(20px,6vw,90px) 0">
+<div style="max-width:1560px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:clamp(14px,2vw,22px);border-bottom:1px solid rgba(26,19,16,.18)">
+<span data-reveal="fade" style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)">Particuliers</span>
+<span data-reveal="fade" style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)">Cinq analyses · Deux formules</span>
+</div>
+<h1 data-reveal="up" style="margin:clamp(22px,3.4vw,50px) 0 0;font:400 clamp(40px,10.4vw,196px)/.86 'Bodoni Moda',serif;letter-spacing:-.036em">Vos codes,<br><span style="font-style:italic;color:var(--accent)">décodés</span></h1>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(22px,3.4vw,64px);align-items:end;margin-top:clamp(26px,3.6vw,52px)">
+<div data-reveal="up" style="padding-bottom:clamp(20px,3vw,44px)">
+<p style="margin:0;max-width:44ch;font:300 clamp(14px,1.02vw,15.5px)/1.88 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Test de colorimétrie, analyse de morphologie et de visagisme, décodage de style, moodboard et tri de dressing. Chaque séance se termine par un book personnalisé : vous repartez avec des critères, pas avec des consignes.</p>
+<button data-go="contact" style="margin-top:clamp(20px,2.8vw,34px);background:var(--accent);color:var(--paper);padding:17px 30px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease,transform .6s cubic-bezier(.16,1,.3,1)" class="hv2">Réserver une séance</button>
+</div>
+<ol data-reveal="up" style="margin:0;padding:0 0 clamp(20px,3vw,44px);list-style:none;display:grid;gap:9px">
+<li style="display:grid;grid-template-columns:2.6ch 1fr;gap:12px;align-items:baseline;border-bottom:1px solid rgba(26,19,16,.14);padding-bottom:8px"><span style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.16em;color:var(--accent)">01</span><span style="font:400 clamp(14px,1.2vw,17px)/1.4 'Bodoni Moda',serif">Colorimétrie</span></li>
+<li style="display:grid;grid-template-columns:2.6ch 1fr;gap:12px;align-items:baseline;border-bottom:1px solid rgba(26,19,16,.14);padding-bottom:8px"><span style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.16em;color:var(--accent)">02</span><span style="font:400 clamp(14px,1.2vw,17px)/1.4 'Bodoni Moda',serif">Morphologie et visagisme</span></li>
+<li style="display:grid;grid-template-columns:2.6ch 1fr;gap:12px;align-items:baseline;border-bottom:1px solid rgba(26,19,16,.14);padding-bottom:8px"><span style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.16em;color:var(--accent)">03</span><span style="font:400 clamp(14px,1.2vw,17px)/1.4 'Bodoni Moda',serif">Stylecode</span></li>
+<li style="display:grid;grid-template-columns:2.6ch 1fr;gap:12px;align-items:baseline;border-bottom:1px solid rgba(26,19,16,.14);padding-bottom:8px"><span style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.16em;color:var(--accent)">04</span><span style="font:400 clamp(14px,1.2vw,17px)/1.4 'Bodoni Moda',serif">Moodboard Stylecode</span></li>
+<li style="display:grid;grid-template-columns:2.6ch 1fr;gap:12px;align-items:baseline;border-bottom:1px solid rgba(26,19,16,.14);padding-bottom:8px"><span style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.16em;color:var(--accent)">05</span><span style="font:400 clamp(14px,1.2vw,17px)/1.4 'Bodoni Moda',serif">Édition de dressing</span></li>
+</ol>
+<div data-reveal="mask" style="align-self:end;justify-self:center;display:flex;align-items:flex-end">
+<img src="images/cut-blazer.png" alt="Kristian Ventura, conseil en image pour particuliers à Toulouse" style="display:block;height:min(52vh,470px);width:auto;max-width:100%;object-fit:contain;object-position:bottom;filter:grayscale(1) contrast(1.03)">
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--paper);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1400px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(26px,4vw,48px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(26px,4.2vw,58px)/1.05 'Bodoni Moda',serif;letter-spacing:-.025em">Les analyses, <span style="font-style:italic;color:var(--accent)">à la carte</span></h2>
+<span style="font:400 10px/1.8 'Jost',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--soft)">Cliquez pour déplier</span>
+</div>
+
+<details style="border-top:1px solid rgba(26,19,16,.2)">
+<summary style="display:flex;align-items:baseline;gap:clamp(12px,3vw,40px);padding:clamp(22px,3vw,38px) 0">
+<span style="flex:none;width:3ch;font:400 clamp(22px,2.6vw,40px)/1 'Bodoni Moda',serif;color:var(--accent)">01</span>
+<span style="flex:1;min-width:0">
+<h3 style="margin:0;font:400 clamp(22px,3.2vw,50px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em">Colorimétrie</h3>
+<span style="display:block;margin-top:10px;font:400 clamp(14px,1.3vw,19px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--soft)">Votre palette signature</span>
+</span>
+<span style="flex:none;display:flex;align-items:center;gap:clamp(14px,2.4vw,28px)">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)">1 h 30 · cabinet ou visio</span>
+<span data-plus="1" style="display:block;flex:none;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(30px,4vw,52px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,4vw,60px)">
+<div>
+<p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Je place successivement des dizaines de tissus sous votre visage et j'observe l'effet produit : le teint qui s'unifie ou se creuse, le regard qui s'ouvre, les traits qui s'apaisent ou se durcissent. Ce n'est pas une question de goût, c'est une réaction optique, et elle se constate.</p>
+<p style="margin:20px 0 0;max-width:32ch;font:500 clamp(17px,1.6vw,23px)/1.45 'Bodoni Moda',serif;font-style:italic">Une palette qui vous met en valeur sans jamais effacer votre personnalité.</p>
+</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Échange sur votre rapport à la couleur et vos habitudes</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Analyse colorimétrique professionnelle par draping</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Détermination de votre température, intensité et contraste</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Harmonies et associations applicables à votre dressing actuel</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Déclinaison sur les vêtements, accessoires, bijoux, maquillage et coloration</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--ink)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span><strong style="font-weight:500">Book Couleurs personnalisé remis en fin de séance</strong></li>
+</ul>
+</div>
+</details>
+
+<details style="border-top:1px solid rgba(26,19,16,.2)">
+<summary style="display:flex;align-items:baseline;gap:clamp(12px,3vw,40px);padding:clamp(22px,3vw,38px) 0">
+<span style="flex:none;width:3ch;font:400 clamp(22px,2.6vw,40px)/1 'Bodoni Moda',serif;color:var(--accent)">02</span>
+<span style="flex:1;min-width:0">
+<h3 style="margin:0;font:400 clamp(22px,3.2vw,50px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em">Morphologie et visagisme</h3>
+<span style="display:block;margin-top:10px;font:400 clamp(14px,1.3vw,19px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--soft)">Vos lignes signatures</span>
+</span>
+<span style="flex:none;display:flex;align-items:center;gap:clamp(14px,2.4vw,28px)">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)">1 h 30 à 2 h · cabinet ou visio</span>
+<span data-plus="1" style="display:block;flex:none;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(30px,4vw,52px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,4vw,60px)">
+<div>
+<p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">On regarde comment vos volumes se répartissent, où se situe votre taille réelle, quelle est la géométrie de votre visage. Ces éléments donnent des réponses directes sur les coupes, les longueurs et les encolures qui produisent l'harmonie la plus nette.</p>
+<p style="margin:20px 0 0;max-width:32ch;font:500 clamp(17px,1.6vw,23px)/1.45 'Bodoni Moda',serif;font-style:italic">Il ne s'agit pas de corriger votre corps, mais de savoir le mettre en valeur.</p>
+</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Analyse de vos proportions et de vos lignes naturelles</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Coupes, volumes et longueurs qui valorisent votre silhouette</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Choix des pantalons, jupes, robes, vestes et manteaux</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Morphologie du visage : encolures, bijoux, lunettes, accessoires</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Imprimés, matières et jeux de proportions selon l'effet recherché</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--ink)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span><strong style="font-weight:500">Book Silhouette et Visage personnalisé</strong></li>
+</ul>
+</div>
+</details>
+
+<details style="border-top:1px solid rgba(26,19,16,.2)">
+<summary style="display:flex;align-items:baseline;gap:clamp(12px,3vw,40px);padding:clamp(22px,3vw,38px) 0">
+<span style="flex:none;width:3ch;font:400 clamp(22px,2.6vw,40px)/1 'Bodoni Moda',serif;color:var(--accent)">03</span>
+<span style="flex:1;min-width:0">
+<h3 style="margin:0;font:400 clamp(22px,3.2vw,50px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em">Stylecode</h3>
+<span style="display:block;margin-top:10px;font:400 clamp(14px,1.3vw,19px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--soft)">Décoder votre style personnel</span>
+</span>
+<span style="flex:none;display:flex;align-items:center;gap:clamp(14px,2.4vw,28px)">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)">1 h 30 à 2 h · cabinet ou visio</span>
+<span data-plus="1" style="display:block;flex:none;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(30px,4vw,52px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,4vw,60px)">
+<div>
+<p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">On part de vos goûts, de votre personnalité, de votre mode de vie et de l'image que vous voulez exprimer. On en tire les codes qui composent votre style : coupes, matières, couleurs, imprimés, accessoires, associations.</p>
+<p style="margin:20px 0 0;max-width:32ch;font:500 clamp(17px,1.6vw,23px)/1.45 'Bodoni Moda',serif;font-style:italic">L'objectif n'est pas de vous enfermer dans un style, mais de créer le vôtre.</p>
+</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Analyse de vos goûts, inspirations et habitudes vestimentaires</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Identification de vos influences stylistiques</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Définition des codes qui composent votre identité vestimentaire</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Vos pièces signature et les détails qui rendent votre allure reconnaissable</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Comment faire évoluer votre style sans perdre votre identité</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--ink)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span><strong style="font-weight:500">Book Style personnalisé</strong></li>
+</ul>
+</div>
+</details>
+
+<details style="border-top:1px solid rgba(26,19,16,.2)">
+<summary style="display:flex;align-items:baseline;gap:clamp(12px,3vw,40px);padding:clamp(22px,3vw,38px) 0">
+<span style="flex:none;width:3ch;font:400 clamp(22px,2.6vw,40px)/1 'Bodoni Moda',serif;color:var(--accent)">04</span>
+<span style="flex:1;min-width:0">
+<h3 style="margin:0;font:400 clamp(22px,3.2vw,50px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em">Moodboard Stylecode</h3>
+<span style="display:block;margin-top:10px;font:400 clamp(14px,1.3vw,19px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--soft)">Votre univers visuel, et les pièces qui vont avec</span>
+</span>
+<span style="flex:none;display:flex;align-items:center;gap:clamp(14px,2.4vw,28px)">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)">En ligne</span>
+<span data-plus="1" style="display:block;flex:none;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(30px,4vw,52px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,4vw,60px)">
+<div>
+<p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">À partir de votre personnalité et de l'image que vous souhaitez dégager, je construis un univers visuel entièrement personnalisé : silhouettes, matières, couleurs, accessoires, détails et inspirations. Puis je sélectionne des pièces réelles, avec les liens pour les acheter.</p>
+<p style="margin:20px 0 0;max-width:32ch;font:500 clamp(17px,1.6vw,23px)/1.45 'Bodoni Moda',serif;font-style:italic">Une sélection choisie pour vous, prête à rejoindre votre dressing.</p>
+</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Échange sur votre style actuel, vos envies et l'image visée</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Définition de l'allure et de l'émotion recherchées</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Direction esthétique : silhouettes, matières, couleurs, détails</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Sélection de pièces selon votre style, vos besoins et votre budget</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Liens d'achat directs pour chaque pièce retenue</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--ink)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span><strong style="font-weight:500">Moodboard remis en version digitale</strong></li>
+</ul>
+</div>
+</details>
+
+<details style="border-top:1px solid rgba(26,19,16,.2);border-bottom:1px solid rgba(26,19,16,.2)">
+<summary style="display:flex;align-items:baseline;gap:clamp(12px,3vw,40px);padding:clamp(22px,3vw,38px) 0">
+<span style="flex:none;width:3ch;font:400 clamp(22px,2.6vw,40px)/1 'Bodoni Moda',serif;color:var(--accent)">05</span>
+<span style="flex:1;min-width:0">
+<h3 style="margin:0;font:400 clamp(22px,3.2vw,50px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em">Édition de dressing</h3>
+<span style="display:block;margin-top:10px;font:400 clamp(14px,1.3vw,19px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--soft)">Réinventer ce que vous avez déjà</span>
+</span>
+<span style="flex:none;display:flex;align-items:center;gap:clamp(14px,2.4vw,28px)">
+<span style="font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)">1 h 30 · en ligne</span>
+<span data-plus="1" style="display:block;flex:none;width:15px;height:1px;background:var(--accent);position:relative"><span style="position:absolute;left:7px;top:-7px;width:1px;height:15px;background:var(--accent)"></span></span>
+</span>
+</summary>
+<div data-body="1" style="padding:0 0 clamp(30px,4vw,52px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,4vw,60px)">
+<div>
+<p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">On ouvre votre garde-robe ensemble et on trie : ce qui vous ressemble et qu'on garde, ce qui mérite d'être porté autrement, ce dont il faut se séparer. La plupart des dressings contiennent déjà de quoi composer beaucoup plus de tenues qu'on ne le croit.</p>
+<p style="margin:20px 0 0;max-width:32ch;font:500 clamp(17px,1.6vw,23px)/1.45 'Bodoni Moda',serif;font-style:italic">Moins de pièces oubliées. Plus de tenues. Plus de vous.</p>
+</div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px">
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Analyse de votre garde-robe et de vos habitudes</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Sélection des pièces à garder, réinventer ou laisser partir</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Nouvelles associations à partir de ce que vous possédez déjà</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Conseils pour redonner une allure aux pièces peu portées</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Identification des essentiels manquants</li>
+<li style="display:flex;gap:13px;font:300 13px/1.78 'Jost',sans-serif;color:var(--ink)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span><strong style="font-weight:500">Shopping list personnalisée</strong></li>
+</ul>
+</div>
+</details>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1400px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(30px,4.4vw,56px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(26px,4.2vw,58px)/1.05 'Bodoni Moda',serif;letter-spacing:-.025em">Les <span style="font-style:italic;color:var(--accent)">formules</span></h2>
+<span style="max-width:36ch;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Deux parcours pour celles et ceux qui préfèrent avancer d'un bloc plutôt que séance après séance.</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(18px,2.6vw,36px)">
+<article data-reveal="up" style="background:var(--paper);border:1px solid rgba(26,19,16,.16);padding:clamp(26px,3.4vw,52px);display:flex;flex-direction:column;gap:clamp(20px,2.6vw,30px)">
+<div>
+<span style="display:block;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--soft)">Formule 01</span>
+<h3 style="margin:16px 0 0;font:400 clamp(26px,3.2vw,46px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em">Pack Découverte</h3>
+<p style="margin:14px 0 0;font:400 clamp(16px,1.4vw,21px)/1.5 'Bodoni Moda',serif;font-style:italic;color:var(--soft)">Les deux fondations : la couleur et la ligne.</p>
+</div>
+<ul style="margin:0;padding:clamp(20px,2.6vw,28px) 0 0;list-style:none;display:flex;flex-direction:column;gap:13px;border-top:1px solid rgba(26,19,16,.16)">
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Analyse colorimétrique complète</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Analyse de morphologie et visagisme</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:var(--soft)"><span style="flex:none;width:13px;height:1px;background:var(--accent);margin-top:11px"></span>Book Couleurs et Book Silhouette et Visage</li>
+</ul>
+<button data-go="contact" style="align-self:flex-start;margin-top:auto;background:var(--ink);color:var(--paper);padding:17px 30px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease" class="hv4">Demander cette formule</button>
+</article>
+<article data-reveal="up" style="background:var(--ink);color:var(--bone);padding:clamp(26px,3.4vw,52px);display:flex;flex-direction:column;gap:clamp(20px,2.6vw,30px)">
+<div>
+<span style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,231,220,.55)">Formule 02 · complète <span style="background:var(--accent);color:var(--paper);padding:6px 10px;letter-spacing:.2em">La plus choisie</span></span>
+<h3 style="margin:16px 0 0;font:400 clamp(26px,3.2vw,46px)/1.04 'Bodoni Moda',serif;letter-spacing:-.025em;color:var(--paper)">Pack Stylecode</h3>
+<p style="margin:14px 0 0;font:400 clamp(16px,1.4vw,21px)/1.5 'Bodoni Moda',serif;font-style:italic;color:rgba(237,231,220,.8)">Le parcours intégral, de l'analyse jusqu'au dressing.</p>
+</div>
+<ul style="margin:0;padding:clamp(20px,2.6vw,28px) 0 0;list-style:none;display:flex;flex-direction:column;gap:13px;border-top:1px solid rgba(237,231,220,.22)">
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:rgba(237,231,220,.82)"><span style="flex:none;width:13px;height:1px;background:var(--bone);margin-top:11px"></span>Analyse colorimétrique complète</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:rgba(237,231,220,.82)"><span style="flex:none;width:13px;height:1px;background:var(--bone);margin-top:11px"></span>Analyse de morphologie et visagisme</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:rgba(237,231,220,.82)"><span style="flex:none;width:13px;height:1px;background:var(--bone);margin-top:11px"></span>Décodage de votre style personnel</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:rgba(237,231,220,.82)"><span style="flex:none;width:13px;height:1px;background:var(--bone);margin-top:11px"></span>Moodboard et sélection de pièces</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:rgba(237,231,220,.82)"><span style="flex:none;width:13px;height:1px;background:var(--bone);margin-top:11px"></span>Édition complète de votre dressing</li>
+<li style="display:flex;gap:13px;font:300 14px/1.75 'Jost',sans-serif;color:rgba(237,231,220,.82)"><span style="flex:none;width:13px;height:1px;background:var(--bone);margin-top:11px"></span>L'ensemble de vos books personnalisés</li>
+</ul>
+<button data-go="contact" style="align-self:flex-start;margin-top:auto;background:var(--paper);color:var(--ink);padding:17px 30px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease" class="hv4">Demander cette formule</button>
+</article>
+</div>
+<p data-reveal="fade" style="margin:clamp(22px,3vw,34px) 0 0;font:300 13px/1.78 'Jost',sans-serif;color:var(--soft)">Tarifs communiqués sur demande, sous 24 heures. Les analyses peuvent aussi s'assembler librement selon vos besoins, et les formules se règlent en deux fois sans frais.</p>
+</div>
+</section>
+
+<section style="background:var(--paper);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1400px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(30px,4.4vw,56px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(26px,4.2vw,58px)/1.05 'Bodoni Moda',serif;letter-spacing:-.025em;max-width:18ch">Ce que vous <span style="font-style:italic;color:var(--accent)">emportez</span></h2>
+<p data-reveal="up" style="margin:0;max-width:38ch;font:300 clamp(13px,.95vw,14.5px)/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Une séance qui ne laisse rien derrière elle ne sert à rien. Tout est documenté, pour que vous puissiez y revenir dans six mois comme dans cinq ans.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(18px,2.6vw,36px)">
+<div data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<span style="display:block;font:400 clamp(26px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">01</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Votre nuancier physique</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Un jeu d'échantillons tissu que vous glissez dans votre sac et que vous sortez en boutique ou en cabine. C'est l'outil le plus utilisé par mes clientes, et de loin.</p>
+</div>
+<div data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<span style="display:block;font:400 clamp(26px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">02</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Vos books personnalisés</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Un document par analyse : couleurs, silhouette et visage, style. Votre profil, vos harmonies, vos coupes, vos encolures, vos métaux, avec les explications qui vont avec.</p>
+</div>
+<div data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<span style="display:block;font:400 clamp(26px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">03</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Votre shopping list</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">La liste des pièces qui manquent réellement à votre garde-robe, hiérarchisée par priorité et calibrée sur votre budget. Avec des liens directs pour le moodboard.</p>
+</div>
+<div data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<span style="display:block;font:400 clamp(26px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">04</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Un mois de questions</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Les vraies questions arrivent une fois seule en cabine d'essayage. Vous pouvez m'écrire pendant le mois qui suit la séance, autant de fois que nécessaire.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1200px;margin:0 auto">
+<h2 data-reveal="up" style="margin:0 0 clamp(28px,4vw,52px);font:400 clamp(26px,4.2vw,58px)/1.05 'Bodoni Moda',serif;letter-spacing:-.025em;max-width:20ch">Les questions qu'on <span style="font-style:italic;color:var(--accent)">n'ose pas poser</span></h2>
+<div style="display:grid;gap:clamp(20px,2.6vw,30px)">
+<div data-reveal="up" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(16px,3vw,44px);border-top:1px solid rgba(26,19,16,.16);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0;font:400 clamp(17px,1.7vw,24px)/1.28 'Bodoni Moda',serif">Est-ce que vous allez juger ma garde-robe ?</h3>
+<p style="margin:0;font:300 14.5px/1.84 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Non, et c'est une question qui revient à presque chaque première séance. Je ne suis pas là pour évaluer votre goût. J'ai vu des dressings de dix pièces et des dressings de trois cents, et le problème est toujours le même : un manque de critères, jamais un manque de goût.</p>
+</div>
+<div data-reveal="up" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(16px,3vw,44px);border-top:1px solid rgba(26,19,16,.16);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0;font:400 clamp(17px,1.7vw,24px)/1.28 'Bodoni Moda',serif">Et si je n'aime pas mes couleurs ?</h3>
+<p style="margin:0;font:300 14.5px/1.84 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Cela arrive, et on en parle. Une palette n'est pas une interdiction : il existe toujours un moyen de porter une couleur qu'on aime en la déplaçant loin du visage, en l'associant autrement, ou en choisissant sa nuance juste. On ne vous retirera jamais une couleur qui vous rend heureuse.</p>
+</div>
+<div data-reveal="up" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(16px,3vw,44px);border-top:1px solid rgba(26,19,16,.16);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0;font:400 clamp(17px,1.7vw,24px)/1.28 'Bodoni Moda',serif">Faut-il un gros budget ensuite ?</h3>
+<p style="margin:0;font:300 14.5px/1.84 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Au contraire. La séance commence par ce que vous possédez déjà, et la plupart des dressings contiennent de quoi composer bien plus de tenues qu'on ne le croit. Les achats viennent après, ciblés, et remplacent des dépenses qui partaient jusque-là dans des pièces jamais portées.</p>
+</div>
+<div data-reveal="up" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(16px,3vw,44px);border-block:1px solid rgba(26,19,16,.16);padding:clamp(16px,2.2vw,24px) 0">
+<h3 style="margin:0;font:400 clamp(17px,1.7vw,24px)/1.28 'Bodoni Moda',serif">Je ne suis pas à l'aise avec mon corps. Est-ce le bon moment ?</h3>
+<p style="margin:0;font:300 14.5px/1.84 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">C'est souvent le meilleur. On ne travaille pas à corriger ou à masquer, et il n'y a aucune photo avant-après, aucune mise en scène. On part de vos proportions telles qu'elles sont aujourd'hui, pour que vous cessiez de vous habiller en attendant un corps futur.</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+<div class="pg" data-pg="b2b" hidden>
+<main data-screen-label="Entreprises">
+
+<section style="position:relative;background:var(--ink);overflow:hidden;min-height:clamp(480px,80vh,880px);display:flex;align-items:center;justify-content:center;padding:clamp(40px,6vw,90px) clamp(20px,6vw,90px)">
+<div aria-hidden="true" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
+<span style="font:400 clamp(70px,20vw,340px)/1 'Bodoni Moda',serif;font-style:italic;color:rgba(237,231,220,.08);letter-spacing:-.05em;white-space:nowrap">Entreprises</span>
+</div>
+<div style="position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:0;align-items:stretch;max-width:1560px;margin:0 auto;width:100%">
+<div style="padding:clamp(20px,3vw,50px) clamp(20px,3.4vw,58px) clamp(20px,3vw,50px) 0">
+<span data-reveal="fade" style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:rgba(237,231,220,.55)">Entreprises · Fashion Therapy</span>
+<h1 data-reveal="up" style="margin:clamp(18px,2.6vw,34px) 0 0;font:400 clamp(34px,6.4vw,104px)/.96 'Bodoni Moda',serif;letter-spacing:-.036em;color:var(--paper);max-width:13ch">Le style comme levier de <span style="font-style:italic;color:var(--accent)">confiance</span></h1>
+<p data-reveal="up" style="margin:clamp(22px,3vw,36px) 0 0;max-width:44ch;font:300 clamp(14px,1.02vw,15.5px)/1.88 'Jost',sans-serif;color:rgba(237,231,220,.78);text-wrap:pretty">La façon dont on s'habille influence la posture, l'assurance et la manière dont les autres nous perçoivent. C'est un sujet que tout le monde vit et que personne n'aborde en réunion. J'en fais une expérience collective, concrète et fédératrice.</p>
+<button data-go="contact" data-reveal="up" style="margin-top:clamp(24px,3.4vw,40px);background:var(--paper);color:var(--ink);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease" class="hv4">Demander un devis</button>
+</div>
+<div data-reveal="wide" style="position:relative;overflow:hidden;min-height:clamp(300px,50vh,640px);border-left:1px solid rgba(237,231,220,.2)">
+<img src="images/bureau-noir.jpg" alt="Kristian Ventura, intervenante Fashion Therapy en entreprise" style="width:100%;height:100%;object-fit:cover;object-position:62% 16%;filter:grayscale(1) contrast(1.12) brightness(.9);animation:vKen 30s ease-in-out infinite alternate">
+<div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(26,19,16,.5) 0%,rgba(26,19,16,.08) 40%,rgba(26,19,16,.32) 100%)"></div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(30px,4.4vw,56px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(28px,5vw,72px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em">Quatre <span style="font-style:italic;color:var(--accent)">formats</span></h2>
+<span style="max-width:36ch;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Chaque intervention est construite à partir de vos objectifs, de votre public et du temps disponible.</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:clamp(16px,2.2vw,30px)">
+<article data-reveal="up" style="background:var(--paper);border:1px solid rgba(26,19,16,.14);padding:clamp(24px,3vw,42px);display:flex;flex-direction:column;gap:14px;transition:background .55s ease,transform .7s cubic-bezier(.16,1,.3,1)" class="hv7">
+<span style="font:400 clamp(30px,3.6vw,54px)/1 'Bodoni Moda',serif">I</span>
+<h3 style="margin:0;font:400 clamp(20px,2vw,29px)/1.14 'Bodoni Moda',serif">Conférences</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;opacity:.82;text-wrap:pretty">Une prise de parole vivante sur l'image de soi, les codes vestimentaires et leur impact professionnel. Format court, pensé pour les séminaires et les conventions.</p>
+<span style="margin-top:auto;font:400 9.5px/1.6 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;opacity:.6">45 min à 1 h 30 · grand groupe</span>
+</article>
+<article data-reveal="up" style="background:var(--paper);border:1px solid rgba(26,19,16,.14);padding:clamp(24px,3vw,42px);display:flex;flex-direction:column;gap:14px;transition:background .55s ease,transform .7s cubic-bezier(.16,1,.3,1)" class="hv7">
+<span style="font:400 clamp(30px,3.6vw,54px)/1 'Bodoni Moda',serif">II</span>
+<h3 style="margin:0;font:400 clamp(20px,2vw,29px)/1.14 'Bodoni Moda',serif">Ateliers collectifs</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;opacity:.82;text-wrap:pretty">Colorimétrie, morphologie ou décodage de style en petit groupe. Chacun repart avec ses propres repères, dans un cadre bienveillant où personne n'est exposé.</p>
+<span style="margin-top:auto;font:400 9.5px/1.6 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;opacity:.6">2 h à une demi-journée · 6 à 12 personnes</span>
+</article>
+<article data-reveal="up" style="background:var(--paper);border:1px solid rgba(26,19,16,.14);padding:clamp(24px,3vw,42px);display:flex;flex-direction:column;gap:14px;transition:background .55s ease,transform .7s cubic-bezier(.16,1,.3,1)" class="hv7">
+<span style="font:400 clamp(30px,3.6vw,54px)/1 'Bodoni Moda',serif">III</span>
+<h3 style="margin:0;font:400 clamp(20px,2vw,29px)/1.14 'Bodoni Moda',serif">Team Booster</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;opacity:.82;text-wrap:pretty">Une expérience de cohésion autour du style. Les hiérarchies s'estompent, on se découvre autrement, et l'équipe repart avec quelque chose de partagé.</p>
+<span style="margin-top:auto;font:400 9.5px/1.6 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;opacity:.6">Demi-journée · équipe constituée</span>
+</article>
+<article data-reveal="up" style="background:var(--paper);border:1px solid rgba(26,19,16,.14);padding:clamp(24px,3vw,42px);display:flex;flex-direction:column;gap:14px;transition:background .55s ease,transform .7s cubic-bezier(.16,1,.3,1)" class="hv7">
+<span style="font:400 clamp(30px,3.6vw,54px)/1 'Bodoni Moda',serif">IV</span>
+<h3 style="margin:0;font:400 clamp(20px,2vw,29px)/1.14 'Bodoni Moda',serif">Animation d'événements</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;opacity:.82;text-wrap:pretty">Journées qualité de vie au travail, salons, lancements, soirées clients. Une animation mode élégante, qui crée de la conversation et laisse une trace.</p>
+<span style="margin-top:auto;font:400 9.5px/1.6 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;opacity:.6">Sur mesure · sur votre site</span>
+</article>
+</div>
+</div>
+</section>
+
+<section style="background:var(--paper);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1200px;margin:0 auto">
+<h2 data-reveal="up" style="margin:0 0 clamp(30px,4.4vw,56px);font:400 clamp(28px,5vw,72px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em;max-width:16ch">Pourquoi <span style="font-style:italic;color:var(--accent)">ça fonctionne</span></h2>
+<div style="display:grid;gap:clamp(20px,2.6vw,32px)">
+<div data-reveal="up" style="display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;border-top:1px solid rgba(26,19,16,.16);padding-top:clamp(18px,2.4vw,28px)">
+<span style="font:400 clamp(24px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">01</span>
+<div>
+<h3 style="margin:0 0 10px;font:400 clamp(19px,1.9vw,27px)/1.2 'Bodoni Moda',serif">La confiance individuelle se voit</h3>
+<p style="margin:0;max-width:62ch;font:300 13.5px/1.822 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Se sentir juste dans sa tenue change la posture en réunion, en rendez-vous client, en prise de parole. Ce n'est pas une question de coquetterie, c'est une question d'aisance, et l'aisance se transmet à l'interlocuteur.</p>
+</div>
+</div>
+<div data-reveal="up" style="display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;border-top:1px solid rgba(26,19,16,.16);padding-top:clamp(18px,2.4vw,28px)">
+<span style="font:400 clamp(24px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">02</span>
+<div>
+<h3 style="margin:0 0 10px;font:400 clamp(19px,1.9vw,27px)/1.2 'Bodoni Moda',serif">C'est un terrain neutre</h3>
+<p style="margin:0;max-width:62ch;font:300 13.5px/1.822 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Le sujet ne dépend ni du poste ni de l'ancienneté. Tout le monde s'habille, donc tout le monde a quelque chose à dire. Les rapports hiérarchiques s'effacent pendant deux heures, et cela laisse des traces utiles ensuite.</p>
+</div>
+</div>
+<div data-reveal="up" style="display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;border-block:1px solid rgba(26,19,16,.16);padding:clamp(18px,2.4vw,28px) 0">
+<span style="font:400 clamp(24px,3vw,44px)/1 'Bodoni Moda',serif;color:var(--accent)">03</span>
+<div>
+<h3 style="margin:0 0 10px;font:400 clamp(19px,1.9vw,27px)/1.2 'Bodoni Moda',serif">Cela sort du catalogue habituel</h3>
+<p style="margin:0;max-width:62ch;font:300 13.5px/1.822 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Les équipes ont déjà vu passer beaucoup d'ateliers. Celui-ci porte sur quelque chose qu'elles vivent chaque matin, et il produit un résultat qu'elles emportent chez elles. C'est ce qui le rend mémorable.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(30px,4.4vw,56px)">
+<h2 data-reveal="up" style="margin:0;font:400 clamp(28px,5vw,72px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em;max-width:18ch">Les sujets que <span style="font-style:italic;color:var(--accent)">j'aborde</span></h2>
+<p data-reveal="up" style="margin:0;max-width:38ch;font:300 clamp(13px,.95vw,14.5px)/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Le vêtement sert de point d'entrée. Ce qui se joue derrière relève de la communication, de la confiance et du collectif.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(18px,2.6vw,36px)">
+<article data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Communication non verbale</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Ce que transmet une tenue avant le premier mot, en rendez-vous client comme en entretien de recrutement. Comment ajuster son registre sans se travestir, et pourquoi la cohérence compte plus que le costume.</p>
+</article>
+<article data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Codes vestimentaires et télétravail</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Le sujet qui embarrasse toutes les organisations depuis l'hybride. Quel niveau de tenue attendre, comment le formuler sans infantiliser, et comment gérer la visioconférence, où seul le buste est visible.</p>
+</article>
+<article data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Confiance et prise de parole</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">L'inconfort vestimentaire consomme de l'attention. Quand on cesse de tirer sur son vêtement ou de surveiller son reflet, il reste de la ressource pour ce qu'on a à dire. C'est particulièrement net avant une présentation.</p>
+</article>
+<article data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Regard sur soi et sur les autres</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Les jugements d'apparence traversent tous les collectifs, le plus souvent sans intention. Nommer ces mécanismes dans un cadre léger désamorce beaucoup de choses, et c'est un angle rarement traité en interne.</p>
+</article>
+<article data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Consommation responsable</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Savoir ce qui nous va réduit mécaniquement les achats inutiles et allonge la durée de vie des vêtements. Un atelier colorimétrie s'inscrit naturellement dans une démarche responsable, avec un résultat mesurable et concret.</p>
+</article>
+<article data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,24px)">
+<h3 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,23px)/1.22 'Bodoni Moda',serif">Image et représentation</h3>
+<p style="margin:0;font:300 13.5px/1.82 'Jost',sans-serif;color:var(--soft);text-wrap:pretty">Pour les équipes en contact direct avec les clients, les porte-parole et les dirigeants : construire une image cohérente avec celle de l'organisation, sans uniformiser les personnalités.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section style="background:var(--paper);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<h2 data-reveal="up" style="margin:0 0 clamp(30px,4.4vw,56px);font:400 clamp(28px,5vw,72px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em;max-width:20ch">Dans quels <span style="font-style:italic;color:var(--accent)">contextes</span></h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:rgba(26,19,16,.16);border-block:1px solid rgba(26,19,16,.16)">
+<div data-reveal="up" style="background:var(--paper);padding:clamp(22px,2.8vw,36px) clamp(18px,2.2vw,28px)">
+<h3 style="margin:0 0 10px;font:400 clamp(16px,1.5vw,21px)/1.25 'Bodoni Moda',serif">Journées qualité de vie au travail</h3>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Un atelier qui change du massage assis et de la sophrologie, et dont les participants repartent avec un livrable personnel.</p>
+</div>
+<div data-reveal="up" style="background:var(--paper);padding:clamp(22px,2.8vw,36px) clamp(18px,2.2vw,28px)">
+<h3 style="margin:0 0 10px;font:400 clamp(16px,1.5vw,21px)/1.25 'Bodoni Moda',serif">Séminaires et conventions</h3>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Une conférence qui réveille une salle en début d'après-midi, sur un sujet que tout le monde comprend immédiatement.</p>
+</div>
+<div data-reveal="up" style="background:var(--paper);padding:clamp(22px,2.8vw,36px) clamp(18px,2.2vw,28px)">
+<h3 style="margin:0 0 10px;font:400 clamp(16px,1.5vw,21px)/1.25 'Bodoni Moda',serif">Insertion et retour à l'emploi</h3>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Pour les structures d'accompagnement : préparer un entretien avec une image qui ne trahit pas la candidature.</p>
+</div>
+<div data-reveal="up" style="background:var(--paper);padding:clamp(22px,2.8vw,36px) clamp(18px,2.2vw,28px)">
+<h3 style="margin:0 0 10px;font:400 clamp(16px,1.5vw,21px)/1.25 'Bodoni Moda',serif">Réseaux et clubs d'affaires</h3>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Un format court pour dirigeants et indépendants, centré sur la crédibilité et la mémorabilité en rendez-vous.</p>
+</div>
+<div data-reveal="up" style="background:var(--paper);padding:clamp(22px,2.8vw,36px) clamp(18px,2.2vw,28px)">
+<h3 style="margin:0 0 10px;font:400 clamp(16px,1.5vw,21px)/1.25 'Bodoni Moda',serif">Soirées clients et lancements</h3>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Une animation qui fait circuler les gens et laisse un souvenir précis, plutôt qu'un cocktail de plus.</p>
+</div>
+<div data-reveal="up" style="background:var(--paper);padding:clamp(22px,2.8vw,36px) clamp(18px,2.2vw,28px)">
+<h3 style="margin:0 0 10px;font:400 clamp(16px,1.5vw,21px)/1.25 'Bodoni Moda',serif">Comités de direction</h3>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:var(--soft)">Accompagnements individuels confidentiels, pour les prises de fonction et les enjeux de représentation.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bone);padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px)">
+<div style="max-width:1560px;margin:0 auto">
+<h2 data-reveal="up" style="margin:0 0 clamp(30px,4.4vw,56px);font:400 clamp(28px,5vw,72px)/1.03 'Bodoni Moda',serif;letter-spacing:-.03em">Comment <span style="font-style:italic;color:var(--accent)">ça se construit</span></h2>
+<ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:clamp(18px,2.6vw,38px)">
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--soft)">Étape 01</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Cadrage</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft)">Un échange téléphonique pour comprendre vos objectifs, votre public et le contexte.</p>
+</li>
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--soft)">Étape 02</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Proposition</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft)">Un format et un déroulé sur mesure, avec un devis détaillé sous 72 heures.</p>
+</li>
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--soft)">Étape 03</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Intervention</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft)">Sur votre site, partout en Occitanie. J'apporte l'intégralité du matériel de draping.</p>
+</li>
+<li data-reveal="up" style="border-top:1px solid var(--ink);padding-top:clamp(16px,2.2vw,26px)">
+<span style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--soft)">Étape 04</span>
+<h3 style="margin:14px 0 10px;font:400 clamp(18px,1.7vw,25px)/1.2 'Bodoni Moda',serif">Prolongement</h3>
+<p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:var(--soft)">Supports remis aux participants, et suivis individuels à tarif préférentiel si vous le souhaitez.</p>
+</li>
+</ol>
+<div data-reveal="up" style="margin-top:clamp(36px,5vw,72px);border-top:1px solid rgba(26,19,16,.2);padding-top:clamp(24px,3.4vw,40px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:clamp(18px,3vw,40px)">
+<p style="margin:0;max-width:38ch;font:400 clamp(18px,2.2vw,32px)/1.3 'Bodoni Moda',serif;font-style:italic">Dites-moi votre date, votre effectif et votre objectif, je vous réponds sous 72 heures.</p>
+<button data-go="contact" style="background:var(--accent);color:var(--paper);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease,transform .6s cubic-bezier(.16,1,.3,1)" class="hv2">Demander un devis</button>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+<div class="pg" data-pg="legal" hidden>
+<main data-screen-label="Informations légales">
+<section style="background:var(--bone);padding:clamp(40px,6vw,88px) clamp(20px,6vw,90px) clamp(60px,9vw,140px)">
+<div style="max-width:880px;margin:0 auto">
+<span style="display:block;font:400 10px/1 'Jost',sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--soft)">Informations légales</span>
+<div style="display:flex;flex-wrap:wrap;gap:clamp(14px,2.4vw,28px);margin:clamp(22px,3vw,36px) 0 clamp(28px,4vw,48px);border-bottom:1px solid rgba(26,19,16,.16);padding-bottom:16px">
+<button data-go="legal" style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding-bottom:8px;border-bottom:1px solid transparent" class="hv0">Mentions légales</button>
+<button data-go="cgv" style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding-bottom:8px;border-bottom:1px solid transparent" class="hv0">Conditions de vente</button>
+<button data-go="privacy" style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding-bottom:8px;border-bottom:1px solid transparent" class="hv0">Confidentialité</button>
+</div>
+<h1 style="margin:0 0 clamp(24px,3.4vw,40px);font:400 clamp(28px,4.6vw,60px)/1.04 'Bodoni Moda',serif;letter-spacing:-.028em"><span id="legalTitle"></span></h1>
+<div style="display:grid;gap:clamp(20px,2.8vw,30px)">
+<div id="legalBlocks"></div>
+</div>
+<p style="margin:clamp(30px,4vw,50px) 0 0;font:300 13px/1.75 'Jost',sans-serif;color:var(--soft)">Document à faire valider par un conseil juridique avant mise en ligne.</p>
+</div>
+</section>
+</main>
+</div>
+
+<footer id="contact" style="position:relative;background:var(--ink);color:var(--bone);overflow:hidden;padding:clamp(60px,9vw,140px) clamp(20px,6vw,90px) clamp(24px,3vw,40px)">
+<div style="max-width:1560px;margin:0 auto;position:relative;z-index:2">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:clamp(30px,5vw,72px);align-items:start">
+<div>
+<h2 style="margin:0;font:400 clamp(30px,5.2vw,78px)/1 'Bodoni Moda',serif;color:var(--paper);letter-spacing:-.035em">Révélons <span style="font-style:italic">vos codes</span></h2>
+<p style="margin:clamp(20px,3vw,32px) 0 0;max-width:40ch;font:300 13.5px/1.825 'Jost',sans-serif;color:rgba(237,231,220,.74);text-wrap:pretty">Un premier échange sans engagement, pour comprendre où vous en êtes et quelle prestation correspond à votre situation.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,3.4vw,38px)">
+<a href="mailto:contact@venturastylecode.fr" style="background:var(--paper);color:var(--ink);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:background .45s ease" class="hv4">Écrire un message</a>
+<a href="tel:+33600000000" style="border:1px solid rgba(237,231,220,.34);color:var(--bone);padding:18px 32px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;transition:border-color .45s ease" class="hv8">Appeler</a>
+</div>
+</div>
+<div style="display:grid;gap:clamp(18px,2.4vw,26px)">
+<div><span style="display:block;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:rgba(237,231,220,.45);margin-bottom:10px">Le cabinet</span><p style="margin:0;font:300 13.5px/1.822 'Jost',sans-serif;color:rgba(237,231,220,.82)">Lasserre-Pradère, 31530<br>Haute-Garonne, 20 min de Toulouse</p></div>
+<div><span style="display:block;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:rgba(237,231,220,.45);margin-bottom:10px">À distance</span><p style="margin:0;font:300 13.5px/1.822 'Jost',sans-serif;color:rgba(237,231,220,.82)">Séances en visioconférence<br>partout en France</p></div>
+</div>
+<nav style="display:grid;gap:12px">
+<span style="display:block;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:rgba(237,231,220,.45);margin-bottom:2px">Navigation</span>
+<button data-go="accueil" style="text-align:left;font:300 14px/1.7 'Jost',sans-serif;color:rgba(237,231,220,.82)" class="hv9">Accueil</button>
+<button data-go="b2c" style="text-align:left;font:300 14px/1.7 'Jost',sans-serif;color:rgba(237,231,220,.82)" class="hv9">Particuliers</button>
+<button data-go="b2b" style="text-align:left;font:300 14px/1.7 'Jost',sans-serif;color:rgba(237,231,220,.82)" class="hv9">Entreprises</button>
+</nav>
+</div>
+<div aria-hidden="true" id="sign" data-lift="1" style="margin-top:clamp(40px,6vw,88px);text-align:center;font:400 clamp(48px,17vw,290px)/.82 'Bodoni Moda',serif;color:rgba(237,231,220,.1);letter-spacing:-.05em;animation:vGlow 9s ease-in-out infinite">Ventura</div>
+<div style="margin-top:clamp(18px,2.4vw,30px);padding-top:clamp(18px,2.4vw,26px);border-top:1px solid rgba(237,231,220,.18);display:flex;flex-wrap:wrap;gap:clamp(14px,2.4vw,28px);align-items:center;justify-content:space-between">
+<span style="font:400 10px/1.7 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(237,231,220,.45)">© 2026 Ventura Stylecode · VKAM Solutions</span>
+<div style="display:flex;flex-wrap:wrap;gap:clamp(14px,2.4vw,26px)">
+<button data-go="legal" style="font:400 10px/1.7 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(237,231,220,.6)" class="hv9">Mentions légales</button>
+<button data-go="cgv" style="font:400 10px/1.7 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(237,231,220,.6)" class="hv9">Conditions de vente</button>
+<button data-go="privacy" style="font:400 10px/1.7 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(237,231,220,.6)" class="hv9">Confidentialité</button>
+</div>
+</div>
+</div>
+</footer>
+<script>
+const LEGAL = {"legal":{"title":"Mentions légales","blocks":[["Éditeur du site","Ventura Stylecode, VKAM Solutions. Activité de conseil en image, stylisme et fashion therapy. Siège : Lasserre-Pradère, 31530, Haute-Garonne, France."],["Directeur de la publication","Kristian Ventura, en qualité de représentant légal."],["Contact","contact@venturastylecode.fr"],["Hébergement","Le site est hébergé par un prestataire établi dans l'Union européenne. Les coordonnées complètes de l'hébergeur sont disponibles sur simple demande."],["Propriété intellectuelle","L'ensemble des contenus du site, textes, photographies, identité visuelle et méthode Stylecode, est protégé par le droit d'auteur. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable."],["Crédits photographiques","Les photographies présentes sur ce site sont la propriété de Ventura Stylecode ou utilisées avec l'autorisation de leurs auteurs."]]},"cgv":{"title":"Conditions générales de vente","blocks":[["Article 1 · Objet","Les présentes conditions régissent les prestations de conseil en image, de stylisme et de fashion therapy proposées par Ventura Stylecode, aux particuliers comme aux personnes morales."],["Article 2 · Prestations","Les prestations comprennent l'analyse colorimétrique, l'analyse de morphologie et de visagisme, le décodage de style, le moodboard et l'édition de dressing, ainsi que les interventions en entreprise. Chaque prestation fait l'objet d'une description précise transmise avant réservation."],["Article 3 · Réservation et tarifs","Toute réservation est confirmée après validation du créneau et versement d'un acompte. Les tarifs sont communiqués sur demande et confirmés par écrit avant la séance. Les interventions en entreprise font l'objet d'un devis nominatif."],["Article 4 · Annulation et report","Toute annulation doit être signalée au moins 48 heures avant la séance. Passé ce délai, l'acompte reste acquis. Un report est possible une fois, dans la limite de trois mois."],["Article 5 · Déroulement","Les séances se déroulent en présentiel au cabinet ou en visioconférence selon la prestation choisie. Le client s'engage à respecter les consignes de préparation communiquées en amont."],["Article 6 · Livrables","Les books, moodboards et shopping lists remis sont personnels et protégés par le droit d'auteur. Toute diffusion ou revente est interdite."],["Article 7 · Responsabilité","Les prestations constituent un accompagnement et des recommandations. Elles ne sauraient engager la responsabilité de Ventura Stylecode quant aux décisions d'achat du client."],["Article 8 · Droit applicable","Les présentes conditions sont soumises au droit français. En cas de litige, une résolution amiable sera recherchée avant toute action judiciaire."]]},"privacy":{"title":"Politique de confidentialité","blocks":[["Responsable du traitement","Ventura Stylecode, VKAM Solutions, Lasserre-Pradère (31530). Toute demande relative à vos données peut être adressée à contact@venturastylecode.fr."],["Données collectées","Sont collectées les données transmises volontairement lors d'une prise de contact ou d'une réservation : nom, adresse électronique, numéro de téléphone, et les informations nécessaires à la réalisation de la prestation."],["Finalités","Les données servent exclusivement à répondre aux demandes, organiser les séances, établir les devis et factures, et assurer le suivi de la relation client. Aucune donnée n'est cédée ni revendue à des tiers."],["Durée de conservation","Les données de prospection sont conservées trois ans à compter du dernier contact. Les documents comptables sont conservés dix ans conformément aux obligations légales."],["Vos droits","Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition au traitement de vos données, ainsi que du droit d'introduire une réclamation auprès de la CNIL."],["Cookies","Le site n'utilise pas de cookies publicitaires ni de traceurs tiers à des fins de profilage. Seuls des cookies techniques strictement nécessaires au fonctionnement peuvent être déposés."]]}};
+const GROUNDS = {bone:['#EDE7DC','#F6F2EA'],rose:['#F0E2DE','#F8EFEC'],ivory:['#F2EEE5','#FAF8F2']};
+const root = document.documentElement;
+function setAccent(c){root.style.setProperty('--accent',c);try{localStorage.setItem('vsc-accent',c)}catch(e){}
+  document.querySelectorAll('#cbar .sw[data-accent]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.accent.toLowerCase()===c.toLowerCase())));
+  const p=document.getElementById('cpick');if(p)p.value=c;}
+function setGround(g){const v=GROUNDS[g]||GROUNDS.bone;root.style.setProperty('--bone',v[0]);root.style.setProperty('--paper',v[1]);try{localStorage.setItem('vsc-ground',g)}catch(e){}
+  document.querySelectorAll('#cbar .sw[data-ground]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.ground===g)));}
+document.querySelectorAll('#cbar .sw[data-accent]').forEach(b=>{b.style.background=b.dataset.accent;b.addEventListener('click',()=>setAccent(b.dataset.accent));});
+document.querySelectorAll('#cbar .sw[data-ground]').forEach(b=>{b.style.background=(GROUNDS[b.dataset.ground]||GROUNDS.bone)[0];b.addEventListener('click',()=>setGround(b.dataset.ground));});
+document.getElementById('cpick').addEventListener('input',e=>setAccent(e.target.value));
+let a0='#6B222A',g0='bone';try{a0=localStorage.getItem('vsc-accent')||a0;g0=localStorage.getItem('vsc-ground')||g0}catch(e){}
+setAccent(a0);setGround(g0);
+
+function renderLegal(key){const d=LEGAL[key]||LEGAL.legal;document.getElementById('legalTitle').textContent=d.title;
+  document.getElementById('legalBlocks').innerHTML=d.blocks.map(b=>'<div style="border-top:1px solid rgba(26,19,16,.14);padding-top:clamp(14px,2vw,20px)"><h2 style="margin:0 0 10px;font:400 clamp(17px,1.6vw,22px)/1.3 \'Bodoni Moda\',serif">'+b[0]+'</h2><p style="margin:0;font:300 13.5px/1.825 \'Jost\',sans-serif;color:var(--soft);text-wrap:pretty">'+b[1]+'</p></div>').join('');}
+
+const PG={accueil:'accueil',b2c:'b2c',b2b:'b2b',legal:'legal',cgv:'legal',privacy:'legal'};
+function go(name){
+  if(name==='contact'){const el=document.getElementById('contact');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-60,behavior:'smooth'});return;}
+  const pg=PG[name]||'accueil';
+  if(pg==='legal')renderLegal(name==='legal'?'legal':name);
+  document.querySelectorAll('.pg').forEach(s=>{s.hidden=(s.dataset.pg!==pg);});
+  window.scrollTo(0,0);tick();
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;e.preventDefault();go(b.dataset.go);});
+
+const prog=document.getElementById('prog'),hero=document.getElementById('hero'),sign=document.getElementById('sign');
+let armed=false,t0=null,probe=null,pt=0,dead=false;
+function reveal(el){el.setAttribute('data-in','');el.style.opacity='1';if(armed&&!probe){probe=el;pt=0;}}
+function disarm(){dead=true;armed=false;root.removeAttribute('data-armed');
+  document.querySelectorAll('[data-reveal]').forEach(el=>{el.setAttribute('data-in','');el.style.transition='none';el.style.opacity='1';el.style.transform='none';el.style.clipPath='none';});}
+function clockLive(){let n=null;try{n=document.timeline&&document.timeline.currentTime}catch(e){}
+  if(typeof n!=='number')return false;if(t0==null){t0=n;return false}return n>t0;}
+function tick(){
+  const vh=window.innerHeight||root.clientHeight||800;
+  const top=Math.max(root.scrollTop||0,document.body.scrollTop||0,window.pageYOffset||0);
+  const max=root.scrollHeight-vh;
+  if(prog)prog.style.width=(max>0?Math.min(100,(top/max)*100):0)+'%';
+  if(hero)hero.style.transform='translate3d(0,'+Math.min(top*0.14,140)+'px,0)';
+  if(sign){const r=sign.getBoundingClientRect();const p=Math.max(-1,Math.min(1,1-(r.top+r.height/2)/vh));sign.style.transform='translate3d(0,'+(-p*34).toFixed(1)+'px,0)';}
+  document.querySelectorAll('[data-hsection]').forEach(sec=>{
+    const track=sec.querySelector('[data-htrack]'),pin=sec.querySelector('[data-hpin]');if(!track||!pin)return;
+    const r=sec.getBoundingClientRect();const span=r.height-pin.offsetHeight;
+    const p=span>0?Math.max(0,Math.min(1,-r.top/span)):0;
+    const maxX=Math.max(0,track.scrollWidth-pin.clientWidth);
+    track.style.transform='translate3d('+(-p*maxX).toFixed(1)+'px,0,0)';
+    const bar=sec.querySelector('[data-hbar]');if(bar)bar.style.width=(p*100).toFixed(1)+'%';
+    const mid=pin.clientWidth/2;
+    Array.prototype.forEach.call(track.children,card=>{
+      const cr=card.getBoundingClientRect();
+      const d=Math.abs(cr.left+cr.width/2-mid)/(pin.clientWidth*0.42);
+      const k=Math.max(0,1-Math.min(1,d));const e=k*k*(3-2*k);
+      card.style.transform='scale('+(0.9+e*0.17).toFixed(3)+')';
+      card.style.opacity=(0.4+e*0.6).toFixed(3);card.style.zIndex=Math.round(e*10);});
+  });
+  let marked=0;
+  document.querySelectorAll('[data-reveal]').forEach(el=>{
+    if(el.hasAttribute('data-in')){el.style.opacity='1';return;}
+    if(el.getBoundingClientRect().top<vh*0.92){reveal(el);marked++;}});
+  if(marked&&!armed&&!dead&&clockLive()){armed=true;root.setAttribute('data-armed','');}
+  if(armed&&probe){if(!probe.isConnected){probe=null;}else{const op=parseFloat(getComputedStyle(probe).opacity);pt++;
+    if(op>=0.9){probe=null;pt=0;}else if(pt>2){disarm();}}}
+  if(armed){const all=document.querySelectorAll('[data-reveal]'),hid=document.querySelectorAll('[data-reveal]:not([data-in])');
+    if(hid.length&&hid.length===all.length)hid.forEach(reveal);}
+}
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick,{passive:true});
+(function loop(){tick();requestAnimationFrame(loop)})();
+setInterval(tick,200);
+renderLegal('legal');
+setTimeout(()=>{const i=document.getElementById('intro');if(i)i.style.display='none';},2600);
+</script>
+</body>
+</html>
