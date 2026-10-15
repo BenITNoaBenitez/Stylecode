@@ -1,0 +1,14 @@
+{
+  "currency": "eur",
+  "version": 1,
+  "products": [
+    {"id":"stylecode","name":"Stylecode · Décoder votre style personnel","variants":[{"id":"stylecode_visio","name":"En visio","amount":16000},{"id":"stylecode_presentiel","name":"En présentiel","amount":18000}]},
+    {"id":"morphologie","name":"Morphologie et visagisme","variants":[{"id":"morphologie_visio","name":"En visio","amount":16000},{"id":"morphologie_presentiel","name":"En présentiel","amount":18000}]},
+    {"id":"colorimetrie","name":"Colorimétrie","variants":[{"id":"colorimetrie_visio","name":"En visio","amount":6900},{"id":"colorimetrie_presentiel","name":"En présentiel","amount":8500}]},
+    {"id":"moodboard","name":"Moodboard Stylecode","priceConfirmationRequired":true,"variants":[{"id":"moodboard","name":"En ligne","amount":6000}]},
+    {"id":"dressing","name":"Édition de dressing","priceConfirmationRequired":true,"variants":[{"id":"dressing","name":"En ligne","amount":9000}]},
+    {"id":"pack_decouverte","name":"Pack Découverte","priceConfirmationRequired":true,"variants":[{"id":"pack_decouverte","name":"Paiement comptant","amount":20000}]},
+    {"id":"pack_stylecode","name":"Pack Stylecode","priceConfirmationRequired":true,"variants":[{"id":"pack_stylecode","name":"Paiement comptant","amount":45000}]},
+    {"id":"carte_cadeau","name":"Carte cadeau Stylecode","variants":[{"id":"carte_cadeau","name":"Montant libre","minimum":100}]}
+  ]
+}

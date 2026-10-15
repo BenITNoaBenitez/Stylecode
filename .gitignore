@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+.stripe/
+node_modules/
+test-results/
