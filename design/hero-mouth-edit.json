@@ -1,0 +1,15 @@
+{
+  "tool": "image_gen (built-in)",
+  "date": "2026-10-15",
+  "file": "images/natalia-accueil-sourire.png",
+  "source": "index.html bundled image fa334a5f-ca34-4308-b6a2-9e02ddce0fa6 (original preserved in manifest)",
+  "prompt": "Use case: identity-preserve. Asset type: existing website homepage portrait photograph. Image 1 is the exact edit target, not a style reference. Make a minimal, extremely photorealistic localized retouch ONLY to the woman's mouth: gently bring her lips closer together so the smile is a little less open and approximately half as much tooth height is visible. Keep a small natural glimpse of the upper teeth, keep the same warm smile and natural lip thickness. Preserve her exact identity and all facial features, eyes, nose, cheeks, jaw, skin texture, age, gaze, head angle, hair, makeup, body, pose, fingers, white suit, black blouse, shoes, window reflections, background, lighting, colors, photographic grain, sharpness, framing, and original portrait aspect ratio. Everything outside the immediate lip area must remain exactly unchanged. This is a tiny photographic correction, not a regenerated portrait. Do not beautify, smooth skin, reshape face, change expression elsewhere, crop, zoom, relight, add text or watermark. Return the full original composition with only this subtle mouth correction.",
+  "integration": "Only the generated mouth area was composited into the original photograph using a feathered elliptical mask centered at (688, 278), radii (37, 23). Lossless PNG, 1066x1600. Verified that every pixel outside the localized mouth region is identical to the decoded source.",
+  "changed_pixel_count": 2444,
+  "changed_bounds": [
+    653,
+    256,
+    724,
+    300
+  ]
+}
