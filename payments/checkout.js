@@ -1,5 +1,16 @@
 (function (root) {
   "use strict";
+  function calUrl(slug, config) {
+    if (!config || config.enabled !== true || typeof config.username !== "string" || typeof slug !== "string") return null;
+    if (!/^[a-zA-Z0-9_-]+$/.test(config.username) || !/^[a-zA-Z0-9_-]+$/.test(slug)) return null;
+    return "https://cal.com/" + config.username + "/" + slug;
+  }
+  function bookingUrl(id, config) {
+    return calUrl(config && config.events && config.events[id], config);
+  }
+  function businessUrl(config) {
+    return calUrl(config && config.businessEvent, config);
+  }
   function paymentUrl(id, config, location) {
     if (!config || !["test", "live"].includes(config.mode)) return null;
     const local = location && (location.protocol === "file:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname));
@@ -18,9 +29,13 @@
     } catch (_) { return null; }
   }
   function offer(id, fallback, payLabel, reserveLabel) {
+    const booking = bookingUrl(id, root.STYLECODE_BOOKING_CONFIG);
+    // Cal.com collects the payment after the customer chooses a time slot.
+    // Do not send the same service through a separate Stripe checkout first.
+    if (booking) return { href: booking, label: reserveLabel, ready: true };
     const href = paymentUrl(id, root.STYLECODE_PAYMENT_CONFIG, root.location);
     return { href: href || fallback, label: href ? payLabel : reserveLabel, ready: Boolean(href) };
   }
-  root.StylecodeCheckout = { paymentUrl: paymentUrl, offer: offer };
+  root.StylecodeCheckout = { paymentUrl: paymentUrl, bookingUrl: bookingUrl, businessUrl: businessUrl, offer: offer };
   if (typeof module !== "undefined" && module.exports) module.exports = root.StylecodeCheckout;
 })(typeof window !== "undefined" ? window : globalThis);

@@ -6,8 +6,12 @@ import { validateCatalog, priceParams, linkParams, provision } from '../scripts/
 
 const catalog = JSON.parse(await readFile(new URL('../payments/catalog.json', import.meta.url), 'utf8'));
 const runtime = await readFile(new URL('../payments/checkout.js', import.meta.url), 'utf8');
-function checkout(config, hostname = 'localhost', protocol = 'http:') {
-  const window = { STYLECODE_PAYMENT_CONFIG: config, location: { hostname, protocol } };
+const bookingSource = await readFile(new URL('../bookings/config.js', import.meta.url), 'utf8');
+const bookingWindow = {};
+vm.runInNewContext(bookingSource, { window: bookingWindow });
+const bookings = bookingWindow.STYLECODE_BOOKING_CONFIG;
+function checkout(config, hostname = 'localhost', protocol = 'http:', bookingConfig) {
+  const window = { STYLECODE_PAYMENT_CONFIG: config, STYLECODE_BOOKING_CONFIG: bookingConfig, location: { hostname, protocol } };
   vm.runInNewContext(runtime, { window, URL });
   return window.StylecodeCheckout;
 }
@@ -117,4 +121,41 @@ test('invalid prices and duplicate variants are rejected before any Stripe call'
   const duplicate = structuredClone(catalog);
   duplicate.products[0].variants[1].id = duplicate.products[0].variants[0].id;
   assert.throws(() => validateCatalog(duplicate), /duplicate/);
+});
+
+test('each configured service books its own Cal.com event, ahead of standalone Stripe checkout', () => {
+  const routes = {
+    stylecode_visio: 'decodez-votre-style',
+    morphologie_visio: 'morphologie-visagisme',
+    colorimetrie_visio: 'colorimetrie',
+    moodboard: 'moodboard-stylecode',
+    dressing: 'edition-de-dressing'
+  };
+  for (const [id, slug] of Object.entries(routes)) {
+    const client = checkout({ mode: 'live', links: { [id]: 'https://buy.stripe.com/example123' } }, 'stylecode.fr', 'https:', bookings);
+    const result = client.offer(id, 'mailto:x', 'Payer', 'Réserver');
+    assert.equal(result.href, `https://cal.com/natalia-ventura-stylecode/${slug}`);
+    assert.equal(result.label, 'Réserver');
+    assert.equal(result.ready, true);
+  }
+});
+
+test('unconfigured in-person variants, packs and gift cards do not use an unrelated calendar', () => {
+  const client = checkout({ mode: 'disabled' }, 'stylecode.fr', 'https:', bookings);
+  for (const id of ['stylecode_presentiel', 'morphologie_presentiel', 'colorimetrie_presentiel', 'pack_decouverte', 'pack_stylecode', 'carte_cadeau']) {
+    const result = client.offer(id, 'mailto:natalia@example.com', 'Payer', 'Réserver');
+    assert.equal(result.href, 'mailto:natalia@example.com', id);
+    assert.equal(result.ready, false, id);
+  }
+  assert.equal(client.businessUrl(bookings), 'https://cal.com/natalia-ventura-stylecode/30min');
+});
+
+test('Cal.com configuration rejects redirects, invalid slugs and disabled booking', () => {
+  const client = checkout({ mode: 'disabled' });
+  for (const config of [
+    { ...bookings, enabled: false },
+    { ...bookings, username: 'user/../../other' },
+    { ...bookings, events: { moodboard: 'https://example.com' } },
+    { ...bookings, events: { moodboard: 'moodboard?redirect=example.com' } }
+  ]) assert.equal(client.bookingUrl('moodboard', config), null);
 });

@@ -4,9 +4,13 @@ Le site utilise des liens de paiement hébergés par Stripe. Aucun serveur de pa
 
 ## État actuel
 
+Depuis le 19 octobre 2026, les cinq prestations en ligne passent par Cal.com, avec le paiement Stripe configuré dans chaque rendez-vous. Le compte public est `natalia-ventura-stylecode`. Les correspondances sont dans `bookings/config.js` : Stylecode, morphologie et visagisme, colorimétrie, Moodboard, édition de dressing. Le rendez-vous gratuit `30min` est réservé aux appels Entreprises.
+
+Ces réservations Cal.com ont priorité sur les Payment Links autonomes ci-dessous : le client choisit son créneau puis paie dans Cal.com, sans second paiement sur le site. Les tarifs et le lieu vidéo ont été vérifiés dans l’API Cal.com : 160 €, 160 €, 69 €, 60 € et 90 €. Les variantes en présentiel, les packs et la carte cadeau restent par e-mail tant que leur parcours propre n’est pas configuré. Les boutons génériques des particuliers mènent au choix des prestations, pas au rendez-vous gratuit Entreprises.
+
 Les 8 produits et leurs 11 variantes sont préparés dans `catalog.json`. Les montants sont en centimes : Stylecode et morphologie à 160 € en visio / 180 € en présentiel, colorimétrie à 69 € / 85 €, Moodboard à partir de 60 €, dressing à partir de 90 €, packs à partir de 200 € et 450 €, carte cadeau à montant libre (minimum 1 €).
 
-Le mode `disabled` et les liens `null` conservent les demandes par e-mail. Chaque variante dispose de son propre lien. Une offre peut être activée indépendamment des autres.
+Le mode `disabled` et les liens `null` conservent les demandes par e-mail pour les offres sans rendez-vous Cal.com. Chaque variante dispose de son propre lien. Une offre peut être activée indépendamment des autres.
 
 Les tarifs définitifs du Moodboard, du dressing et des deux packs restent à confirmer : leur montant « à partir de » ne vaut pas encore validation d'un prix fixe. Le pack Stylecode est préparé pour un paiement comptant ; le paiement en plusieurs fois reste à convenir directement avec Natalia, sans abonnement ni échéancier automatique créé.
 
@@ -34,7 +38,9 @@ Le mode `test` est volontairement inactif sur un domaine public. Le mode `live` 
 
 ## Après le paiement
 
-Stripe affiche sa confirmation hébergée. Le site ne confirme aucun paiement à partir d'un paramètre d'URL. Les liens portent la référence de la variante pour le rapprochement. Natalia vérifie le paiement dans Stripe puis organise la séance ou la carte cadeau ; aucune émission de carte cadeau ni prise de rendez-vous automatique n'est annoncée.
+Pour les cinq événements configurés, Cal.com gère le choix du créneau, le paiement Stripe et la confirmation du rendez-vous.
+
+Pour les Payment Links autonomes, Stripe affiche sa confirmation hébergée. Le site ne confirme aucun paiement à partir d'un paramètre d'URL. Les liens portent la référence de la variante pour le rapprochement. Natalia vérifie le paiement dans Stripe puis organise la séance ou la carte cadeau ; aucune émission de carte cadeau ni prise de rendez-vous automatique n'est annoncée pour ce parcours distinct.
 
 Tests locaux : `node --test tests/payments.test.mjs`.
 
