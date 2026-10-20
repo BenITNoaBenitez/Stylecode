@@ -30,7 +30,7 @@
   }
   function offer(id, fallback, payLabel, reserveLabel) {
     const booking = bookingUrl(id, root.STYLECODE_BOOKING_CONFIG);
-    // Cal.com collects the payment after the customer chooses a time slot.
+    // Cal.com handles booking and any payment enabled on the selected event.
     // Do not send the same service through a separate Stripe checkout first.
     if (booking) return { href: booking, label: reserveLabel, ready: true };
     const href = paymentUrl(id, root.STYLECODE_PAYMENT_CONFIG, root.location);

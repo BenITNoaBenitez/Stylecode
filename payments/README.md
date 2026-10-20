@@ -4,9 +4,22 @@ Le site utilise des liens de paiement hébergés par Stripe. Aucun serveur de pa
 
 ## État actuel
 
-Depuis le 19 octobre 2026, les cinq prestations en ligne passent par Cal.com, avec le paiement Stripe configuré dans chaque rendez-vous. Le compte public est `natalia-ventura-stylecode`. Les correspondances sont dans `bookings/config.js` : Stylecode, morphologie et visagisme, colorimétrie, Moodboard, édition de dressing. Le rendez-vous gratuit `30min` est réservé aux appels Entreprises.
+Vérification du compte Cal.com `natalia-ventura-stylecode` le 20 octobre 2026 : huit variantes sont associées dans `bookings/config.js`. Le rendez-vous gratuit `30min` est réservé aux appels Entreprises.
 
-Ces réservations Cal.com ont priorité sur les Payment Links autonomes ci-dessous : le client choisit son créneau puis paie dans Cal.com, sans second paiement sur le site. Les tarifs et le lieu vidéo ont été vérifiés dans l’API Cal.com : 160 €, 160 €, 69 €, 60 € et 90 €. Les variantes en présentiel, les packs et la carte cadeau restent par e-mail tant que leur parcours propre n’est pas configuré. Les boutons génériques des particuliers mènent au choix des prestations, pas au rendez-vous gratuit Entreprises.
+| Variante du site | Événement Cal.com | Tarif configuré | Stripe activé dans les métadonnées |
+| --- | --- | --- | --- |
+| Stylecode visio | `stylecode-decodez-votre-style-en-ligne` | 160 € | Non renseigné |
+| Stylecode présentiel | `decodez-votre-style` | 180 € | Oui |
+| Morphologie visio | `morphologie-visagisme-en-ligne` | 160 € | Non renseigné |
+| Morphologie présentiel | `morphologie-visagisme` | 180 € | Oui |
+| Colorimétrie visio | `colorimetrie` | 69 € | Oui |
+| Colorimétrie présentiel | `colorimetrie-en-presentiel` | 85 € | Non renseigné |
+| Moodboard | `moodboard-stylecode` | 60 € | Oui |
+| Édition de dressing | `edition-de-dressing` | 90 € | Oui |
+
+Les anciens événements Stylecode et Morphologie sont désormais à 180 € : les boutons visio à 160 € utilisent leurs nouveaux événements dédiés. Tous les événements indiquent encore Cal Video comme lieu, y compris les trois variantes associées au présentiel. Leur lieu doit être corrigé dans Cal.com. Les trois événements sans métadonnées Stripe nécessitent une vérification de l’activation du paiement ; le prix configuré seul ne prouve pas qu’un paiement sera demandé.
+
+Ces réservations Cal.com ont priorité sur les Payment Links autonomes ci-dessous : le client choisit son créneau puis effectue le paiement si celui-ci est activé dans Cal.com, sans second paiement sur le site. Les deux packs n’apparaissent pas parmi les dix événements retournés par le compte. L’événement `carte-cadeau` est un rendez-vous gratuit de 90 minutes, sans paiement ni montant libre : il n’est donc pas utilisé comme lien d’achat. Les packs et la carte cadeau restent par e-mail tant que leur parcours propre n’est pas configuré. Les boutons génériques des particuliers mènent au choix des prestations, pas au rendez-vous gratuit Entreprises.
 
 Les 8 produits et leurs 11 variantes sont préparés dans `catalog.json`. Les montants sont en centimes : Stylecode et morphologie à 160 € en visio / 180 € en présentiel, colorimétrie à 69 € / 85 €, Moodboard à partir de 60 €, dressing à partir de 90 €, packs à partir de 200 € et 450 €, carte cadeau à montant libre (minimum 1 €).
 
@@ -38,7 +51,7 @@ Le mode `test` est volontairement inactif sur un domaine public. Le mode `live` 
 
 ## Après le paiement
 
-Pour les cinq événements configurés, Cal.com gère le choix du créneau, le paiement Stripe et la confirmation du rendez-vous.
+Pour les huit variantes associées, Cal.com gère le choix du créneau et la confirmation du rendez-vous. Le paiement Stripe dépend de son activation dans chaque événement (voir l’état ci-dessus).
 
 Pour les Payment Links autonomes, Stripe affiche sa confirmation hébergée. Le site ne confirme aucun paiement à partir d'un paramètre d'URL. Les liens portent la référence de la variante pour le rapprochement. Natalia vérifie le paiement dans Stripe puis organise la séance ou la carte cadeau ; aucune émission de carte cadeau ni prise de rendez-vous automatique n'est annoncée pour ce parcours distinct.
 

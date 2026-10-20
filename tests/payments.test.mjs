@@ -125,9 +125,12 @@ test('invalid prices and duplicate variants are rejected before any Stripe call'
 
 test('each configured service books its own Cal.com event, ahead of standalone Stripe checkout', () => {
   const routes = {
-    stylecode_visio: 'decodez-votre-style',
-    morphologie_visio: 'morphologie-visagisme',
+    stylecode_visio: 'stylecode-decodez-votre-style-en-ligne',
+    stylecode_presentiel: 'decodez-votre-style',
+    morphologie_visio: 'morphologie-visagisme-en-ligne',
+    morphologie_presentiel: 'morphologie-visagisme',
     colorimetrie_visio: 'colorimetrie',
+    colorimetrie_presentiel: 'colorimetrie-en-presentiel',
     moodboard: 'moodboard-stylecode',
     dressing: 'edition-de-dressing'
   };
@@ -140,9 +143,9 @@ test('each configured service books its own Cal.com event, ahead of standalone S
   }
 });
 
-test('unconfigured in-person variants, packs and gift cards do not use an unrelated calendar', () => {
+test('packs and gift purchases do not use an unrelated or free calendar', () => {
   const client = checkout({ mode: 'disabled' }, 'stylecode.fr', 'https:', bookings);
-  for (const id of ['stylecode_presentiel', 'morphologie_presentiel', 'colorimetrie_presentiel', 'pack_decouverte', 'pack_stylecode', 'carte_cadeau']) {
+  for (const id of ['pack_decouverte', 'pack_stylecode', 'carte_cadeau']) {
     const result = client.offer(id, 'mailto:natalia@example.com', 'Payer', 'Réserver');
     assert.equal(result.href, 'mailto:natalia@example.com', id);
     assert.equal(result.ready, false, id);
