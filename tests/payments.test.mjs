@@ -132,7 +132,9 @@ test('each configured service books its own Cal.com event, ahead of standalone S
     colorimetrie_visio: 'colorimetrie',
     colorimetrie_presentiel: 'colorimetrie-en-presentiel',
     moodboard: 'moodboard-stylecode',
-    dressing: 'edition-de-dressing'
+    dressing: 'edition-de-dressing',
+    pack_decouverte: 'pack-decouverte',
+    pack_stylecode: 'pack-stylecode'
   };
   for (const [id, slug] of Object.entries(routes)) {
     const client = checkout({ mode: 'live', links: { [id]: 'https://buy.stripe.com/example123' } }, 'stylecode.fr', 'https:', bookings);
@@ -143,9 +145,9 @@ test('each configured service books its own Cal.com event, ahead of standalone S
   }
 });
 
-test('packs and gift purchases do not use an unrelated or free calendar', () => {
+test('gift purchases do not use the free gift calendar', () => {
   const client = checkout({ mode: 'disabled' }, 'stylecode.fr', 'https:', bookings);
-  for (const id of ['pack_decouverte', 'pack_stylecode', 'carte_cadeau']) {
+  for (const id of ['carte_cadeau']) {
     const result = client.offer(id, 'mailto:natalia@example.com', 'Payer', 'Réserver');
     assert.equal(result.href, 'mailto:natalia@example.com', id);
     assert.equal(result.ready, false, id);

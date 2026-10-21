@@ -4,28 +4,30 @@ Le site utilise des liens de paiement hébergés par Stripe. Aucun serveur de pa
 
 ## État actuel
 
-Vérification du compte Cal.com `natalia-ventura-stylecode` le 20 octobre 2026 : huit variantes sont associées dans `bookings/config.js`. Le rendez-vous gratuit `30min` est réservé aux appels Entreprises.
+Vérification du compte Cal.com `natalia-ventura-stylecode` le 21 octobre 2026 : dix variantes sont associées dans `bookings/config.js`. Le rendez-vous gratuit `30min` est réservé aux appels Entreprises.
 
 | Variante du site | Événement Cal.com | Tarif configuré | Stripe activé dans les métadonnées |
 | --- | --- | --- | --- |
-| Stylecode visio | `stylecode-decodez-votre-style-en-ligne` | 160 € | Non renseigné |
+| Stylecode visio | `stylecode-decodez-votre-style-en-ligne` | 160 € | Oui |
 | Stylecode présentiel | `decodez-votre-style` | 180 € | Oui |
-| Morphologie visio | `morphologie-visagisme-en-ligne` | 160 € | Non renseigné |
+| Morphologie visio | `morphologie-visagisme-en-ligne` | 160 € | Oui |
 | Morphologie présentiel | `morphologie-visagisme` | 180 € | Oui |
 | Colorimétrie visio | `colorimetrie` | 69 € | Oui |
-| Colorimétrie présentiel | `colorimetrie-en-presentiel` | 85 € | Non renseigné |
+| Colorimétrie présentiel | `colorimetrie-en-presentiel` | 85 € | Oui |
 | Moodboard | `moodboard-stylecode` | 60 € | Oui |
 | Édition de dressing | `edition-de-dressing` | 90 € | Oui |
+| Pack Découverte | `pack-decouverte` | 200 € | Oui |
+| Pack Stylecode | `pack-stylecode` | 450 € | Oui |
 
-Les anciens événements Stylecode et Morphologie sont désormais à 180 € : les boutons visio à 160 € utilisent leurs nouveaux événements dédiés. Tous les événements indiquent encore Cal Video comme lieu, y compris les trois variantes associées au présentiel. Leur lieu doit être corrigé dans Cal.com. Les trois événements sans métadonnées Stripe nécessitent une vérification de l’activation du paiement ; le prix configuré seul ne prouve pas qu’un paiement sera demandé.
+Les anciens événements Stylecode et Morphologie sont désormais à 180 € : les boutons visio à 160 € utilisent leurs nouveaux événements dédiés. Lors de la vérification du 20 octobre, les trois variantes associées au présentiel indiquaient Cal Video comme lieu ; leur lieu reste à vérifier dans Cal.com. Le 21 octobre, les dix variantes payantes indiquent Stripe activé, avec le montant correspondant au site et le paiement à la réservation (`ON_BOOKING`).
 
-Ces réservations Cal.com ont priorité sur les Payment Links autonomes ci-dessous : le client choisit son créneau puis effectue le paiement si celui-ci est activé dans Cal.com, sans second paiement sur le site. Les deux packs n’apparaissent pas parmi les dix événements retournés par le compte. L’événement `carte-cadeau` est un rendez-vous gratuit de 90 minutes, sans paiement ni montant libre : il n’est donc pas utilisé comme lien d’achat. Les packs et la carte cadeau restent par e-mail tant que leur parcours propre n’est pas configuré. Les boutons génériques des particuliers mènent au choix des prestations, pas au rendez-vous gratuit Entreprises.
+Ces réservations Cal.com ont priorité sur les Payment Links autonomes ci-dessous : le client choisit son créneau puis effectue le paiement si celui-ci est activé dans Cal.com, sans second paiement sur le site. Les deux packs figurent désormais parmi les douze événements du compte et leurs boutons mènent à leurs réservations respectives à 200 € et 450 €. L’événement `carte-cadeau` est un rendez-vous gratuit de 90 minutes, sans paiement ni montant libre : il n’est donc pas utilisé comme lien d’achat. La carte cadeau reste par e-mail tant que son parcours d’achat à montant libre n’est pas configuré. Les boutons génériques des particuliers mènent au choix des prestations, pas au rendez-vous gratuit Entreprises.
 
 Les 8 produits et leurs 11 variantes sont préparés dans `catalog.json`. Les montants sont en centimes : Stylecode et morphologie à 160 € en visio / 180 € en présentiel, colorimétrie à 69 € / 85 €, Moodboard à partir de 60 €, dressing à partir de 90 €, packs à partir de 200 € et 450 €, carte cadeau à montant libre (minimum 1 €).
 
 Le mode `disabled` et les liens `null` conservent les demandes par e-mail pour les offres sans rendez-vous Cal.com. Chaque variante dispose de son propre lien. Une offre peut être activée indépendamment des autres.
 
-Les tarifs définitifs du Moodboard, du dressing et des deux packs restent à confirmer : leur montant « à partir de » ne vaut pas encore validation d'un prix fixe. Le pack Stylecode est préparé pour un paiement comptant ; le paiement en plusieurs fois reste à convenir directement avec Natalia, sans abonnement ni échéancier automatique créé.
+Pour une éventuelle création de Payment Links autonomes, les tarifs définitifs du Moodboard, du dressing et des deux packs restent à confirmer ; les événements Cal.com utilisent les montants déjà configurés par Natalia. Le pack Stylecode est préparé pour un paiement comptant ; le paiement en plusieurs fois reste à convenir directement avec Natalia, sans abonnement ni échéancier automatique créé.
 
 ## Créer les liens
 
@@ -51,7 +53,7 @@ Le mode `test` est volontairement inactif sur un domaine public. Le mode `live` 
 
 ## Après le paiement
 
-Pour les huit variantes associées, Cal.com gère le choix du créneau et la confirmation du rendez-vous. Le paiement Stripe dépend de son activation dans chaque événement (voir l’état ci-dessus).
+Pour les dix variantes associées, Cal.com gère le choix du créneau et la confirmation du rendez-vous. Le paiement Stripe dépend de son activation dans chaque événement (voir l’état ci-dessus).
 
 Pour les Payment Links autonomes, Stripe affiche sa confirmation hébergée. Le site ne confirme aucun paiement à partir d'un paramètre d'URL. Les liens portent la référence de la variante pour le rapprochement. Natalia vérifie le paiement dans Stripe puis organise la séance ou la carte cadeau ; aucune émission de carte cadeau ni prise de rendez-vous automatique n'est annoncée pour ce parcours distinct.
 
