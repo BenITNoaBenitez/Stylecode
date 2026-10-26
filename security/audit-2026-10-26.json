@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-26",
+  "scope": {
+    "site": "https://benitnoabenitez.github.io/Stylecode/",
+    "repositories": [
+      "BenITNoaBenitez/Stylecode",
+      "venturastylecode-beep/Stylecode"
+    ],
+    "type": "Audit du code statique, tests navigateur automatisés et contrôle des ressources publiées. Aucun paiement ni rendez-vous créé."
+  },
+  "changes": [
+    "Politique CSP dans le document initial et le modèle : scripts intégrés au HTML, gestionnaires inline, scripts distants, connexions externes, bases externes, objets, iframes et soumissions natives de formulaires bloqués.",
+    "Chargeur déplacé dans assets/site-loader.js ; la table de ressources est assignée directement, sans génération de script inline.",
+    "Composant image-slot inutilisé et connexions anticipées Google Fonts supprimés ; les polices et React sont déjà embarqués.",
+    "Politique no-referrer et liens externes avec noopener noreferrer.",
+    "Langue française et viewport mobile déclarés dès le chargement initial.",
+    "Menu mobile plus lisible, icônes des accordéons sans débordement, contraste amélioré du pied de page et du titre Contact."
+  ],
+  "verification": {
+    "unit_tests": {
+      "command": "node --test tests/payments.test.mjs",
+      "passed": 12
+    },
+    "browser_tests": {
+      "command": "PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.js SITE_AUDIT_URL=http://127.0.0.1:8765/ node tests/site-audit.mjs",
+      "engines": [
+        "Chromium",
+        "WebKit"
+      ],
+      "page_viewport_checks_passed": 112,
+      "viewport_sizes": [
+        [
+          320,
+          740
+        ],
+        [
+          360,
+          800
+        ],
+        [
+          375,
+          812
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          768,
+          1024
+        ],
+        [
+          844,
+          390
+        ],
+        [
+          1440,
+          900
+        ]
+      ],
+      "pages": [
+        "Accueil",
+        "Particuliers",
+        "Entreprises",
+        "Mentions légales",
+        "Conditions de vente",
+        "Confidentialité",
+        "Cookies"
+      ],
+      "checks": [
+        "Pas de débordement horizontal ni de texte coupé détecté",
+        "Zones tactiles visibles d’au moins 44 px de haut en mode mobile",
+        "Dix liens Cal.com associés aux bonnes variantes",
+        "Montant cadeau invalide refusé, montant valide accepté sans soumission",
+        "Retours à l’accueil immédiats avec animations normales",
+        "Navigation réelle du pack Découverte vers un Cal.com simulé, sans réservation",
+        "Scripts inline, attributs onclick, scripts distants, fetch externe et base externe bloqués",
+        "Aucune erreur JavaScript ni requête tierce pendant les parcours normaux"
+      ]
+    },
+    "file_preview": "Ouverture file:// contrôlée dans Chromium et WebKit avec la CSP.",
+    "public_sensitive_paths": {
+      ".git/config": 404,
+      ".env": 404,
+      ".stripe/live.json": 404
+    },
+    "transport": "HTTPS valide ; HSTS présent dans la réponse GitHub Pages.",
+    "dependencies": {
+      "source": "https://api.osv.dev/v1/querybatch",
+      "react@18.3.1": "Aucune alerte retournée le 26 octobre 2026",
+      "react-dom@18.3.1": "Aucune alerte retournée le 26 octobre 2026"
+    },
+    "secret_scan": "Aucun jeton GitHub, Cal.com ou Stripe détecté dans les fichiers texte suivis et leur historique."
+  },
+  "limits": [
+    "Tests en émulation navigateur : ils ne remplacent pas une validation sur tous les téléphones physiques.",
+    "Le moteur de composants embarqué utilise new Function : la CSP conserve unsafe-eval pour les scripts autorisés et blob: pour les ressources embarquées. Les scripts inline restent interdits.",
+    "La réponse GitHub Pages ne fournit pas de protection frame-ancestors/X-Frame-Options ni X-Content-Type-Options. frame-ancestors ne fonctionne pas dans une balise meta : une protection anti-encadrement complète exige des en-têtes HTTP sur un hébergement ou proxy configurable. frame-src none bloque les iframes chargées par le site, pas son intégration par un tiers.",
+    "Le paiement est hébergé chez Cal.com/Stripe : cet audit vérifie les liens et les garde-fous du site, pas la sécurité interne de ces services ni un paiement réel.",
+    "Les jetons fournis pour les opérations GitHub/Cal.com ne sont pas stockés dans le site. Leur révocation ou rotation reste une opération du propriétaire du compte.",
+    "Ces contrôles ne constituent pas une garantie d’absence de toute vulnérabilité."
+  ],
+  "references": [
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Referrer-Policy"
+  ]
+}
